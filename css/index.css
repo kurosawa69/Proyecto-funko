@@ -18,3 +18,10 @@
 @import url(./pages/shop.css);
 @import url(./pages/item.css);
 @import url(./pages/cart.css);
+
+
+
+/* un poquito de color en header y footer*/
+header , footer {
+    background-color: var(--dark-bg-solid);
+}
