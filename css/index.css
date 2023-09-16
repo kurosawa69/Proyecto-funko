@@ -25,3 +25,50 @@
 header , footer {
     background-color: var(--dark-bg-solid);
 }
+
+/*Se agregan el estilo al slide*/
+
+.slider-container{
+    display:flex;
+    
+}
+.last-release{
+    display: flex;
+    justify-content: center;
+
+}
+.last-release h2{
+    font-size: 48px;
+
+}
+.elemento{
+    /* list style -none quita el item que aparece por defecto en las listas*/
+list-style-type: none;
+    margin: 50px;
+}
+.elemento article{
+    font-size:  8px;
+}
+
+.elementos{
+    gap: 80px;
+    display: flex;
+}
+.elementos img{
+    width: 300px;
+}
+.btn-slider{
+    display: flex;
+    align-items: center;
+}
+.nuevo{
+
+ display: flex;
+flex-direction:row-reverse;
+}
+.nuevo i{
+
+    font-style: normal;
+}
+
+/*Terminan los estilos del slider*/
