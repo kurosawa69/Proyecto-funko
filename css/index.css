@@ -30,7 +30,9 @@ header , footer {
 
 .slider-container{
     display:flex;
-    justify-content:baseline;
+    align-items: center;
+    justify-content: center;
+    
     
 }
 .last-release{
@@ -45,13 +47,13 @@ header , footer {
 .elemento{
     /* list style -none quita el item que aparece por defecto en las listas*/
 list-style-type: none;
-    margin: 50px;
+    margin: 48px;
 }
 .elemento article{
     font-size:  8px;
 }
 
-.elementos{
+.elementos{ 
     gap: 80px;
     display: flex;
 }
