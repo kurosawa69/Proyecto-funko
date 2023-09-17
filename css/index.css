@@ -65,12 +65,14 @@ list-style-type: none;
     align-items: center;
 }
 .nuevo{
-
  display: flex;
-flex-direction:row-reverse;
+flex-direction: row-reverse;
+width: 300px;
 }
 .nuevo i{
-
+    width: 50px;
+    color: wheat    ;
+background-color: red;
     font-style: normal;
 }
 
