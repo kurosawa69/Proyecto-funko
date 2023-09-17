@@ -10,6 +10,7 @@
 
 @import url(./partials/header.css);
 @import url(./partials/footer.css);
+@import url(./partials/slide.css);
 
 
 /*PAGINAS*/
@@ -25,55 +26,3 @@
 header , footer {
     background-color: var(--dark-bg-solid);
 }
-
-/*Se agregan el estilo al slide*/
-
-.slider-container{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-.last-release{
-    display: flex;
-    justify-content: center;
-
-}
-.last-release h2{
-    font-size: 48px;
-
-}
-.elemento{
-    /* list style -none quita el item que aparece por defecto en las listas*/
-list-style-type: none;
-    margin: 48px;
-}
-.elemento article{
-    font-size:  8px;
-}
-
-.elementos{ 
-    gap: 80px;
-    display: flex;
-}
-.elementos img{
-    width: 300px;
-}
-.btn-slider{
-    display: flex;
-    align-items: center;
-}
-.nuevo{
- display: flex;
-flex-direction: row-reverse;
-width: 300px;
-}
-.nuevo i{
-    width: 50px;
-    color: wheat    ;
-background-color: red;
-    font-style: normal;
-}
-
-/*Terminan los estilos del slider*/
