@@ -10,12 +10,11 @@
 }
 .last-release{
     display: flex;
-    justify-content: center;
+    justify-content:flex-start;
 
 }
 .last-release h2{
-    font-size: 48px;
-
+font-size: 28px;
 }
 .elemento{
     /* list style -none quita el item que aparece por defecto en las listas*/
