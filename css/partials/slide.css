@@ -1,36 +1,31 @@
-
-/*Se agregan el estilo al slide*/
-
 .slider-container{
     display:flex;
     align-items: center;
-    justify-content: center;
-    
-    
 }
 .last-release{
+    font-size:24px;
     display: flex;
     justify-content:flex-start;
-
-}
-.last-release h2{
-font-size: 28px;
 }
 .elemento{
     /* list style -none quita el item que aparece por defecto en las listas*/
 list-style-type: none;
     margin: 48px;
 }
-.elemento article{
-    font-size:  8px;
-}
 
+.elemento article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4px;
+}
 .elementos{ 
-    gap: 80px;
+    font-size: small;
     display: flex;
 }
 .elementos img{
-    width: 300px;
+    margin-left: -70px;
+    width: 290px;
 }
 .btn-slider{
     display: flex;
@@ -39,12 +34,19 @@ list-style-type: none;
 .nuevo{
  display: flex;
 flex-direction: row-reverse;
-width: 300px;
+width: 200px; 
 }
 .nuevo i{
-    width: 50px;
-    color: wheat    ;
-background-color: red;
+    height: 24px;
+
+    font-size: 12px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 55px;
+    color: #FFFFFF;
+    background-color: #FF3333;;
+
     font-style: normal;
 }
 

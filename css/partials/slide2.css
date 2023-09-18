@@ -1,5 +1,17 @@
 .btns-container{
-
-    display: flex;
+    font-size: 28px;
+        display: flex;
     justify-content: center;       
+}
+.btn{
+    font-size:  large;
+    width: inherit
+
+    
+}
+.elements-container{
+    display: flex;
+}
+.body-container-shop{
+    display: flex;
 }
