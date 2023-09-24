@@ -1,84 +1,85 @@
 :root {
-    /*Palette*/
-    --primary-solid: #FF3333;
-    --primary-900: rgb(255, 51, 51, 0.9);
-    --primary-500: rgb(255, 51, 51, 0.5);
-    --primary-300: rgb(255, 51, 51, 0.3);
+  /*Palette*/
+  --primary-solid: #ff3333;
+  --primary-900: rgb(255, 51, 51, 0.9);
+  --primary-500: rgb(255, 51, 51, 0.5);
+  --primary-300: rgb(255, 51, 51, 0.3);
 
-    --secondary-solid: #1D84B5;
-    --secondar-900: rgb(29, 132, 181, 0.9);
-    --secondar-500: rgb(29, 132, 181, 0.5);
-    --secondar-300: rgb(29, 132, 181, 0.3);
+  --secondary-solid: #1d84b5;
+  --secondar-900: rgb(29, 132, 181, 0.9);
+  --secondar-500: rgb(29, 132, 181, 0.5);
+  --secondar-300: rgb(29, 132, 181, 0.3);
 
-    --dark-solid: #1F1F1F;
-    --dark-900: rgb(31, 31, 31, 0.9);
-    --dark-500: rgb(31, 31, 31, 0.5);
-    --dark-300: rgb(31, 31, 31, 0.3);
+  --dark-solid: #1f1f1f;
+  --dark-900: rgb(31, 31, 31, 0.9);
+  --dark-500: rgb(31, 31, 31, 0.5);
+  --dark-300: rgb(31, 31, 31, 0.3);
 
-    --dark-bg-solid: #30343f;
-    --light-bg-solid: #FAFAFF;
+  --dark-bg-solid: #30343f;
+  --light-bg-solid: #fafaff;
 
-    /*Typography*/
-    --base-font: 'Inter', sans-serif;
-    --alternative-font: 'Raleway', sans-serif;
+  /*Typography*/
+  --base-font: "Inter", sans-serif;
+  --alternative-font: "Raleway", sans-serif;
 
-    /*Font sizes*/
-    --font-display: 4.6em;
-    --font-jumbo: 3.8em;
-    --font-xlarge: 3em;
-    --font-large: 2.4em;
-    --font-medium: 1.8em;
-    --font-small: 1.6em;
-    --font-xsmall: 1.4em;
+  /*Font sizes*/
+  --font-display: 4.6em;
+  --font-jumbo: 3.8em;
+  --font-xlarge: 3em;
+  --font-large: 2.4em;
+  --font-medium: 1.8em;
+  --font-small: 1.6em;
+  --font-xsmall: 1.4em;
 
-    /*Spacings*/
-    --spacing-128: 12.8rem;
-    --spacing-68: 6.8rem;
-    --spacing-36: 3.6rem;
-    --spacing-28: 2.8rem;
-    --spacing-26: 2.6rem;
-    --spacing-24: 2.4rem;
-    --spacing-16: 1.6rem;
-    --spacing-12: 1.2rem;
-    --spacing-8: 0.8rem;
+  /*Spacings*/
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-26: 2.6rem;
+  --spacing-24: 2.4rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
 }
 
 *,
 * ::before,
 * ::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    /*font-size: 62.5;*/
-    color: var(--dark-solid);
-    font-family: var(--base-font);
+  font-size: 62.5;
+  color: var(--dark-solid);
+  font-family: var(--base-font);
 }
 
 a {
-    text-decoration: none;
-    font-size: 2em;
-    color: inherit;
-    font-family: inherit;
+  text-decoration: none;
+  font-size: 2em;
+  color: inherit;
+  font-family: inherit;
 }
 
 header,
 footer {
-    color: #ffffff;
-    font-family: Raleway;
+  color: #ffffff;
+  font-family: Raleway;
 }
 
-ul, ol {
-    list-style-type: none;
+ul,
+ol {
+  list-style-type: none;
 }
 
 p {
-    font-size: var(--font-medium);
+  font-size: var(--font-medium);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto;
 }
