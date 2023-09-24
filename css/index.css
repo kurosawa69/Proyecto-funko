@@ -21,7 +21,3 @@
 
 
 
-/* un poquito de color en header y footer*/
-header , footer {
-    background-color: var(--dark-bg-solid);
-}
