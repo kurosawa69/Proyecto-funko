@@ -1,0 +1,28 @@
+
+/*GOOGLE FONTS*/
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap");
+
+/*MISCELANEOUS*/
+
+@import url(../css/misc/normalize.css);
+
+/*PARTIALS*/
+
+@import url(./partials/header.css);
+@import url(./partials/footer.css);
+
+/*PAGINAS*/
+
+@import url(./pages/home.css);
+@import url(./pages/shop.css);
+@import url(./pages/item.css);
+@import url(./pages/cart.css);
+@import url(./pages/creat.css);
+
+
+/* un poquito de color en header y footer*/
+header,
+footer {
+  background-color: var(--dark-bg-solid);
+}
