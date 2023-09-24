@@ -38,6 +38,7 @@
   --spacing-28: 2.8rem;
   --spacing-26: 2.6rem;
   --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
@@ -66,6 +67,7 @@ a {
 
 header,
 footer {
+  background-color: var(--dark-bg-solid);
   color: #ffffff;
   font-family: Raleway;
 }

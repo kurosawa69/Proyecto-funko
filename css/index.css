@@ -5,7 +5,7 @@
 
 /*MISCELANEOUS*/
 
-@import url(./misc/normalize.css);
+@import url(../css/misc/normalize.css);
 
 /*PARTIALS*/
 
@@ -18,6 +18,8 @@
 @import url(./pages/shop.css);
 @import url(./pages/item.css);
 @import url(./pages/cart.css);
+@import url(./pages/creat.css);
+
 
 /* un poquito de color en header y footer*/
 header,
