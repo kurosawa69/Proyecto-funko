@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <link rel="stylesheet" href="styles.css" />
@@ -10,15 +11,23 @@
 <body>
     <!--comienza el header-->
     <header>
- <nav>
-        <picture>
-        <a href="./index.html">Funkoshop<img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo Funkoshop"></a>
+ <nav class="navbar container">
+        <picture class="navbar__logo">
+        <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo Funkoshop"></a>
         </picture>
-        <ul>
-            <li><a href="/pages/shop.html">Shop</a></li>
-            <li><a href="">Contaco</a></li>
-            <li><a href="">Login</a></li>
-            <li><a href="./pages/cart.html"><img src="../img/icons/cart-icon.svg" alt="">Carrito</a></li>
+        <ul class="navbar__menu">
+            <li class="navbar__link">
+              <a href="/pages/shop.html">Shop</a>
+            </li>
+            <li class="navbar__link">
+              <a href="">Contaco</a>
+            </li>
+            <li class="navbar__link">
+              <a href="">Login</a>
+            </li>
+            <li>
+              <a href="./pages/cart.html">Carrito<img src="../img/icons/cart-icon.svg" alt=""></a>
+            </li>
   
         </ul>
        
@@ -159,8 +168,7 @@
 
     </main>
 
-   <!--COMIENZA EL FOOTER-->
-   <footer>
+   
     <div>
         <ul>
           <li>

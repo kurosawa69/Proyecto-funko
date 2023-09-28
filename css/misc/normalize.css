@@ -53,14 +53,13 @@
 }
 
 html {
-  font-size: 62.5;
+  font-size: 62.5%;
   color: var(--dark-solid);
   font-family: var(--base-font);
 }
 
 a {
   text-decoration: none;
-  font-size: 2em;
   color: inherit;
   font-family: inherit;
 }
