@@ -1,0 +1,25 @@
+header {
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar__logo {
+    max-width: 300px;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+
+}
+
+.navbar__link {
+    font-size: var(--font-medium);
+}

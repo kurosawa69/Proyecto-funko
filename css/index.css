@@ -19,10 +19,6 @@
 @import url(./pages/item.css);
 @import url(./pages/cart.css);
 @import url(./pages/creat.css);
+@import url(./pages/edit.css)
 
 
-/* un poquito de color en header y footer*/
-header,
-footer {
-  background-color: var(--dark-bg-solid);
-}
