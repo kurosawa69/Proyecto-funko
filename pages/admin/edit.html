@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
+    <link rel="icon" href="../../img/icons/edit_pencil.svg" type="svg">
     <link rel="stylesheet" href="../../css/index.css">
 </head>
 <body>
@@ -29,14 +30,18 @@
       </header>
       <!--fin del header-->
     <div class="container"><p class="titulo">EDITAR ITEM</p></div>
-    <section><!-- Comienza sección producto -->
-      <label for="category">Categoría:</label>
-      <input type="text">
-      <label for="license">Licencia:</label>
-      <input type="text">
+
+    <section class="container">
+      <div class="padding">
+        <label for="category" class="labels">Categoría:<button class="btn-class">Figuras </button></label>
+        <label for="license" class="labels">Licencia:<button class="btn-class">Naruto Shippuden v</button></label>
+          
+      </div>
+      
+          
     </section>
   
-    <section><!-- Comienza sección nombre y descripción -->
+    <section class="container"><!-- Comienza sección nombre y descripción -->
       <div>
         <label for="name">Nombre del Producto:</label>
         <input type="text" value="Kakashi Hatake Shippuden Saga">
@@ -45,7 +50,7 @@
         <input type="text" value="Funko coleccionable de Kakashi Hatake de la saga Naruto Shipudden invocando chidori.">
       </div>  
     </section>
-    <section>
+    <section class="container">
         <div>
             <ul><!--precio|stock-->
                 <li> <label for="text">SKU:</label><input type="text"></li>
@@ -58,7 +63,7 @@
                 <li><label for="text">Cuotas:</label> <input type="text"></li>
              </ul>
     </section>
-    <section><!--imagen-->
+    <section class="container"><!--imagen-->
         <div>
             <label for="text">Imágenes:</label>
             <button><a href="">Elegir archivos</a></button>
