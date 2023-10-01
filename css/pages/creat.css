@@ -1,5 +1,5 @@
 /*header*/
-img{
+img {
   width: 100%;
 }
 header {
@@ -11,9 +11,8 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.navbar_logo{
+.navbar_logo {
   max-width: 300px;
-
 }
 .navbar_menu {
   display: flex;
@@ -21,11 +20,12 @@ header {
   gap: var(--spacing-20);
 }
 
-.navbar__link{
-  font-size: var(--font-medium) ;
+.navbar__link {
+  font-size: var(--font-medium);
   padding: var(--spacing-8) var(--spacing-16);
   display: inline-block;
+  transition: background 0.3s ease-in-out;
 }
 .navbar__link:hover {
-  background-color:rgb(255, 51, 51, 0.9);
+  background-color: rgb(255, 51, 51, 0.9);
 }
