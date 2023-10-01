@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/index.css"/>
+    <link rel="stylesheet" href="../../css/index.css" />
     <title>Create</title>
   </head>
   <body>
@@ -17,56 +17,67 @@
               alt="Logotipo Funkoshop"
           /></a>
         </picture>
-        <ul class="navbar_menu">
-          <li class="item"><a class="navbar__link" href="">VER TIENDA</a></li>
-          <li class="item"><a class="navbar__link"href="">ADMIN</a></li>
-          <li class="item"><a class="navbar__link"  href="">SALIR</a></li>
-        
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="">VER TIENDA</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">SALIR</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!--fin del header-->
-  <main >
-    <h2>CREAR NUEVO ITEM</h2>
-    <section>
-      <span> Categoria:</span>
-      <input type="number" />
-      <span>Licencia:</span>
-      <input type="number" />
-    </section>
-    <h3>Nombre del Producto</h3>
-    <input type="text" />
-    <section>
-      <ul>
-        <li>SKU:</li>
-        <li>Precio</li>
-        <li>Descuento</li>
-        <li>Stock</li>
-        <span>Cuotas:</span>
+    <main>
+      <h2>CREAR NUEVO ITEM</h2>
+      <section>
+        <span> Categoria:</span>
         <input type="number" />
-      </ul>
-    </section>
-    <button>Agregar Producto</button>
-    <button>Limpiar</button>
-    <footer>
-      <div>
+        <span>Licencia:</span>
+        <input type="number" />
+      </section>
+      <h3>Nombre del Producto</h3>
+      <input type="text" />
+      <section>
         <ul>
-          <li><a href=""></a>SHOP</li>
-          <li><a href=""></a>REGISTRARSE</li>
-          <li><a href=""></a>INGRESAR</li>
-          <li><a href=""></a>CONTACTO</li>
+          <li>SKU:</li>
+          <li>Precio</li>
+          <li>Descuento</li>
+          <li>Stock</li>
+          <span>Cuotas:</span>
+          <input type="number" />
         </ul>
-      </div>
+      </section>
+      <button>Agregar Producto</button>
+      <button>Limpiar</button>
     </main>
-      <span>
-        <h4>All rights reserved 2023 - Funkoshop &copy;</h4>
-      </span>
-      <div>
-        <img
-          src="../../img/branding/logo_light_horizontal.svg"
-          alt="isotipo de la marca Funkoshop"
-        />
-      </div>
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/">CONTACTO </a>
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="../../img/branding/isotype.svg"
+            alt="isotipo de la marca Funkoshop"
+          />
+        </picture>
+      </nav>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop & copy.</p>
     </footer>
   </body>
 </html>

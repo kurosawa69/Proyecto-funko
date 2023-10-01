@@ -11,10 +11,10 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-.navbar_logo {
+.navbar__logo {
   max-width: 300px;
 }
-.navbar_menu {
+.navbar__menu {
   display: flex;
   align-items: center;
   gap: var(--spacing-20);
@@ -28,4 +28,13 @@ header {
 }
 .navbar__link:hover {
   background-color: rgb(255, 51, 51, 0.9);
+}
+/*footer*/
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+}
+.footer__copy {
+  margin-top: var(--spacing-36);
+  text-align: center;
 }
