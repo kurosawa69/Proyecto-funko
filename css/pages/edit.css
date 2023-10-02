@@ -1,7 +1,12 @@
-.titulo {
+div {
+    display: flex;
+    gap: var(--spacing-20);
+}
+
+.edit__title {
 display: flex;
 align-items: start;
-font-size: 42px;
+font-size: var(--font-display);
 font-weight: 700;
 line-height: 49px;
 letter-spacing: 0.04em;
@@ -22,10 +27,10 @@ padding-top: 20px;
 }
 
 .labels {
-    display: inline;
+    display:inline-flex;
     align-items: start;
     font-size: var(--font-large);
-    font-family: Inter;
+    font-family: var(--base-font);
     font-size: 24px;
     font-weight: 300;
     line-height: 29px;
@@ -40,14 +45,50 @@ width: 243.03px;
 height: 44.28px;
 top: 268.43px;
 left: 254.25px;
-padding: 10px 20px;
-border-radius: 10px;
+border-radius: 4px;
 cursor: pointer;
-border: 2px black;
+border-bottom: 2px, var(--dark-solid);
 
 
 }
 
 .padding {
     padding-top: 20px;
+    
+}
+
+.selector__title {
+font-family: var(--alternative-font);
+font-size: var(--font-large);
+font-weight: 500;
+}
+
+.selector__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-small);
+    font-weight: 300;
+    border: none;
+    border-bottom: 2px solid var(--primary-solid);
+    width: 20%;
+}
+.content {
+    width: 1012.06px;
+    height: 194.83px;
+    border-radius: 4px;
+    border: 1px solid black;
+    
+}
+
+.content__text {
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    font-weight: 300;  
+    text-align: left;
+
+}
+
+.centrarPrueba {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
 }
