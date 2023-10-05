@@ -1,41 +1,36 @@
-@import url(./misc/normalize.css);
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-header{
+header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
- 
-    
 }
-.navbar{
+
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
 }
-.navbar__logo{
+.navbar__logo {
     max-width: 300px;
 }
-.navbar__menu{
+
+.navbar__menu {
     display: flex;
     align-items: center;
     gap: var(--spacing-20);
+
 }
 
-.navbar__link{
+.navbar__link {
     font-size: var(--font-medium);
     padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
-    transition: background .3s ease-in-out;
+    transition: background, .3s, ease-in-out;
     position: relative;
 }
-.navbar__link:hover{
-    background-color: var(--primary-900);
+.navbar__link:hover {
+    background-color: var(--primary-900); 
 }
+/*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;
     align-items: center;
@@ -50,6 +45,7 @@ header{
     width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
+    z-index: 3;
 
 }
 .submenu__link{
@@ -60,4 +56,13 @@ header{
 }
 .submenu__link:hover{
     background-color: var(--primary-900);
+}
+
+
+/* .navbar__cart {
+
+} */
+.centrarPrueba {
+    align-items: center;
+    text-align: justify;
 }
