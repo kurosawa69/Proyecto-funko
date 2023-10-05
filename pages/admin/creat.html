@@ -32,28 +32,75 @@
     </header>
     <!--fin del header-->
     <main>
-      <h2>CREAR NUEVO ITEM</h2>
-      <section>
-        <span> Categoria:</span>
-        <input type="number" />
-        <span>Licencia:</span>
-        <input type="number" />
-      </section>
-      <h3>Nombre del Producto</h3>
-      <input type="text" />
-      <section>
-        <ul>
-          <li>SKU:</li>
-          <li>Precio</li>
-          <li>Descuento</li>
-          <li>Stock</li>
-          <span>Cuotas:</span>
-          <input type="number" />
-        </ul>
-      </section>
-      <button>Agregar Producto</button>
-      <button>Limpiar</button>
+      <form action="formulario">
+        <h2>CREAR NUEVO ITEM</h2>
+
+        <section class="formulario__grupo" id="grupo__categoria">
+          <label for="categoria" class="formulario__label">Categoria</label>
+          <input
+            type="number"
+            class="formulario__input"
+            name="categoria"
+            id="categoria"
+            placeholder="seleccionar"
+          />
+        </section>
+        <!--<span> Categoria:</span>-->
+        <!--<input type="number" />-->
+        <section class="formulario__grupo" id="grupo__licencia">
+          <label for="licencia" class="formulario__label">Licencia</label>
+          <input
+            type="number"
+            class="formulario__input"
+            name="licencia"
+            id="licencia"
+            placeholder="seleccionar"
+          />
+        </section>
+        <!--<span>Licencia:</span>
+          <input type="number" /-->
+        <section>
+          <h3>Nombre del Producto</h3>
+          <hr />
+        </section>
+        <input
+          type="text"
+          name="mensaje"
+          id="mensaje"
+          placeholder="Descripcion del producto"
+        />
+      </form>
+        <section>
+          <ul>
+            <li>SKU:</li>
+            <li>Precio</li>
+            <li>Descuento</li>
+            <li>Stock</li>
+            <section class="cuotas">
+            <label for="cuotas" class="formulario__label">Cuotas</label>
+            <input
+              type="number"
+              class="formulario__input"
+              name="cuotas"
+              id="cuotas"
+              placeholder="3 cuotas sin interes"
+            />
+          </ul>
+        </section>
+        <br>
+        <br>
+
+        <div class="formulario__grupo formulario__grupo-btn-agregar__producto">
+          <button type="submit" class="formulario__btn">Agregar Producto</button>
+
+          <div class="formulario__grupo formulario__grupo-btn-limpiar">
+            <button type="submit" class="formulario__btn">Limpiar</button>
+           </div>
+           </div>
+     
     </main>
+    <br>
+    <br>
     <footer class="footer">
       <nav class="navbar container">
         <ul class="navbar__item">

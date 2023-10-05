@@ -28,7 +28,14 @@ header {
 }
 .navbar__link:hover {
   background-color: rgb(255, 51, 51, 0.9);
+
 }
+
+h2 {
+  text-align: left;
+  font-size: var(-font-jumbo 3.8em);
+}
+
 /*footer*/
 .footer {
   background-color: var(--dark-bg-solid);
