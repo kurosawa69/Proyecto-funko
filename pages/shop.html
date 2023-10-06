@@ -31,42 +31,50 @@
     <!--comienza el aside-->
     <div>
     <aside class="box-container__aside">
-        <h3>BUSCAR</h3>
-        <form action="save-information">
-            <input type="text" placeholder="item o categoria">
-            <h3>Ordenar Por</h3>
-            <select>
+        <div>
+             <h3 class="tittle-aside">BUSCAR</h3>
+     <form action="save-information">
+             <input type="text" placeholder="item o categoria">
+        </div>
+        <div>
+            <h3 class="tittle-aside">ORDENAR POR</h3>
+            <select class="select__aside">
                 <option>Mayor a Menor</option>
                 <option>Menor a Mayor</option>
                 <option>Ofertas</option>
                 <option>Envio gratis</option>
-          </select>
-
             </select>
-            <h3>PRECIO</h3>
+        </div>
+        <div>
+             <h3 class="tittle-aside">PRECIO</h3>
+            <div class="min-max">
             <span>
-                <p>MIN</p><input type="number" placeholder="0">
+             <p>MIN</p><input type="number" placeholder="0">
             </span>
             <span>
-                <p>MAX</p><input type="number" placeholder="10">
+             <p>MAX</p><input type="number" placeholder="10">
             </span>
-            <h3>Filtrar</h3>
-            <ul>
+            </div>
+        </div>
+        <div>
+             <h3 class="tittle-aside">FILTRAR</h3>
+             <ul class="aside-list__checkbox">
                 <li><input type="checkbox"  name="Nuevos" >
-                    <label for="Nuevos">Nuevos</label><br></li>
+                    <label for="Nuevos">NUEVOS</label><br></li>
                 <li><input type="checkbox"  name="Nuevos" >
-                    <label for="Nuevos">Oferta</label><br></li>
+                    <label for="Nuevos">OFERTA</label><br></li>
                 <li><input type="checkbox"  name="Nuevos" >
-                    <label for="Nuevos">Edicion especial</label><br></li>
+                    <label for="Nuevos">EDICION ESPECIAL</label><br></li>
                 <li><input type="checkbox"  name="Nuevos" >
-                    <label for="Nuevos">Favoritos</label><br></li>
-            </ul>
-        </form>
+                    <label for="Nuevos">FAVORITOS</label><br></li>
+             </ul>
+        </div>
+     </form>
     </aside> <!--fin del aside-->
-    <!--aca puse 3 veces el section que estaba en la rama develope para estructurar la vista, borrando el h2 ultimos lanzamientos-->
+    <!--comienza seccion de cards-->
 <main class="box-container__articles">
     <section class="cards__container">
-      <div>
+      <div class="box-card">
         <article class="card">
             <span class="new">NUEVO</span>
             <div class="card__image">
