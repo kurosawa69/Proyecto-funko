@@ -8,8 +8,9 @@
 
 </head>
 <body><!--comienza el header-->
-    <header>
-        <nav class="navbar container">
+    
+    <header class="box-container__header">
+        <nav>
             <picture>
 
                <a href="../index.html"><img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo Funkoshop"></a>
@@ -28,7 +29,8 @@
         </nav>
     </header><!--fin del header-->
     <!--comienza el aside-->
-    <aside>
+    <div>
+    <aside class="box-container__aside">
         <h3>BUSCAR</h3>
         <form action="save-information">
             <input type="text" placeholder="item o categoria">
@@ -62,34 +64,56 @@
         </form>
     </aside> <!--fin del aside-->
     <!--aca puse 3 veces el section que estaba en la rama develope para estructurar la vista, borrando el h2 ultimos lanzamientos-->
-    <section class="Relacionados">
-        <ul>
-            <li>
-                <article>
+<main class="box-container__articles">
+    <section class="cards__container">
+      <div>
+        <article class="card">
+            <span class="new">NUEVO</span>
+            <div class="card__image">
+                <img src="../img/star-wars/trooper-1.webp" alt="trooper-1">
+            </div>
+            <ul class="description">
+                <li><p class="description__collection">STAR WARS</p></li>
+                <li><h4 class="description__character">STORMTROOPER LIGHTSABER</h4></li>
+                <li><p class="description__price">$ 1799.99</p></li>
+                <li><p class="description__info">3 CUOTAS SIN INTERÉS</p></li>
+            </ul>
+        </article>
+        <article class="card">
+            <span class="new">NUEVO</span>
+            <picture class="card__image">
+                <img src="../img/star-wars/trooper-1.webp" alt="trooper-1">
+            </picture>
+            <ul class="description">
+                <li><p class="description__collection">STAR WARS</p></li>
+                <li><h4 class="description__character">STORMTROOPER LIGHTSABER</h4></li>
+                <li><p class="description__price">$ 1799.99</p></li>
+                <li><p class="description__info">3 CUOTAS SIN INTERÉS</p></li>
+            </ul>
+        </article>
+        <article class="card">
+            <span class="new">NUEVO</span>
+            <picture class="card__image">
+                <img src="../img/star-wars/trooper-1.webp" alt="trooper-1">
+            </picture>
+            <ul class="description">
+                <li><p class="description__collection">STAR WARS</p></li>
+                <li><h4 class="description__character">STORMTROOPER LIGHTSABER</h4></li>
+                <li><p class="description__price">$ 1799.99</p></li>
+                <li><p class="description__info">3 CUOTAS SIN INTERÉS</p></li>
+            </ul>
+        </article>
+           
+    </section>
+</main>
+    </div>        <!--<li>
+                <article class="box-container__articles-item">
                     <a href="">
                         <div class="btn-container">
                             <button class="btn-red">Nuevo</button>
                         </div>
 
-                        <img src="../Img/star-wars/trooper-1.webp" alt="trooper-1">
-
-                        <div>
-                            <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
-                            <p>$ 1799.99</p>
-                            <p>3 CUOTAS SIN INTERÉS</p>
-                        </div>
-                    </a>
-                </article>
-
-            <li>
-                <article>
-                    <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
-                        </div>
-
-                        <img src="../Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                        <img src="../img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
 
                         <div>
                             <p>POKEMON</p>
@@ -102,13 +126,13 @@
             </li>
 
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/harry-potter/luna-1.webp" alt="Luna LOVEGOOD">
+                        <img src="../img/harry-potter/luna-1.webp" alt="Luna LOVEGOOD">
 
                         <div>
                             <p>HARRY POTTER</p>
@@ -124,20 +148,20 @@
         </ul>
 
     </section>
-    <section class="Relacionados">
+    <section class="box-container__articlesx3">
         <ul>
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div class=>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/star-wars/trooper-1.webp" alt="trooper-1">
+                        <img src="../img/star-wars/baby-yoda-1.webp" alt="baby-yoda-1">
 
                         <div>
                             <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <h4>BABY YODA BLUEBALL</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -145,17 +169,17 @@
                 </article>
 
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                        <img src="../img/pokemon/charmander-1.webp" alt="charmander-1">
 
                         <div>
                             <p>POKEMON</p>
-                            <h4>PIDGEOTTO</h4>
+                            <h4>CHARMANDER</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -164,17 +188,17 @@
             </li>
 
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/harry-potter/luna-1.webp" alt="Luna LOVEGOOD">
+                        <img src="../img/harry-potter/harry-1.webp" alt="harry-1">
 
                         <div>
                             <p>HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <h4>HARRY</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -186,20 +210,20 @@
         </ul>
 
     </section>
-    <section class="Relacionados">
+    <section class="box-container__articlesx3">
         <ul>
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/star-wars/trooper-1.webp" alt="trooper-1">
+                        <img src="../img/star-wars/luke-1.webp" alt="luke-1">
 
                         <div>
                             <p>STAR WARS</p>
-                            <h4>STORMTROOPER LIGHTSABER</h4>
+                            <h4>LUKE</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -207,17 +231,17 @@
                 </article>
 
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                        <img src="../img/pokemon/vulpix-1.webp" alt="vulpix-1">
 
                         <div>
                             <p>POKEMON</p>
-                            <h4>PIDGEOTTO</h4>
+                            <h4>VULPIX</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -226,17 +250,17 @@
             </li>
 
             <li>
-                <article>
+                <article class="box-container__articles-item">
                     <a href="">
-                        <div class="btn-container">
-                            <button class="btn-red">Nuevo</button>
+                        <div>
+                            <button>Nuevo</button>
                         </div>
 
-                        <img src="../Img/harry-potter/luna-1.webp" alt="Luna LOVEGOOD">
+                        <img src="../img/harry-potter/snape-patronus-1.webp" alt="snape-patronus-1">
 
                         <div>
                             <p>HARRY POTTER</p>
-                            <h4>LUNA LOVEGOOD LION MASK</h4>
+                            <h4>SNAPE PATRONUS</h4>
                             <p>$ 1799.99</p>
                             <p>3 CUOTAS SIN INTERÉS</p>
                         </div>
@@ -246,10 +270,10 @@
 
 
         </ul>
-
     </section>
+</main> -->
    <!--comienza el footer-->
-    <footer>
+    <footer class="box-container__footer">
         <div>
             <ul>
                 <li><a href=""></a>SHOP</li>
