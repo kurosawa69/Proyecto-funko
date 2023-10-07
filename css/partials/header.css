@@ -33,7 +33,6 @@ header {
 .navbar__link:hover {
     background-color: var(--primary-900); 
 }
-
 /*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;

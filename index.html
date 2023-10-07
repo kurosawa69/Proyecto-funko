@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,7 +11,6 @@
 <body>
     <!--comienza el header-->
     <header>
-
       <nav class="navbar container">
         <picture class="navbar__logo">
           <a href="./index.html"
@@ -101,7 +101,9 @@
                  <article  class="card-item">
                      <a class="card-item__link" href="">
                       <picture class="card-item__cover">
-                        <img src="./Img/star-wars/trooper-1.webp" alt="trooper-1">
+                        <span class="card-item__tag">Nuevo</span>
+                        <img class="card-item__img--front" src="./Img/star-wars/trooper-1.webp" alt="trooper-1">
+                        <img class="card-item__img--back" src="./img/star-wars/trooper-box.webp" alt="Tropper en caja ">
                       </picture>
                       <div class="card-item__content">
                              <p class="card-item__licence">STAR WARS</p>
@@ -113,12 +115,14 @@
                  </article>
                  </li>
 
-                 <li class="elemento">
+                 <li class="slider__item">
                   <!--Un list item con un articulo dentro-->
                                   <article class="card-item" >
-                                      <a href="">
+                                      <a class="card-item__link"  href="">
                                        <picture class="card-item__cover">
-                                         <img src="./Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                                        <span class="card-item__tag">Nuevo</span>
+                                         <img class="card-item__img--front" src="./Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                                         <img class="card-item__img--back" src="img/pokemon/pidgeotto-box.webp" alt="Pidgeotto en caja">
                                        </picture>
                                        <div class="card-item__content">
                                         <p class="card-item__licence">POKEMON</p>
@@ -130,12 +134,14 @@
                                   </article>
                                   </li>
 
-                                  <li class="elemento">
+                                  <li class="slider__item">
                                     <!--Un list item con un articulo dentro-->
                                                     <article class="card-item">
-                                                        <a href="">
+                                                        <a class="card-item__link"  href="">
                                                          <picture class="card-item__cover">
-                                                           <img src="./img/harry-potter/luna-1.webp" alt="Luna Lovegood">
+                                                          <span class="card-item__tag">Nuevo</span>
+                                                           <img class="card-item__img--front" src="./img/harry-potter/luna-1.webp" alt="Luna Lovegood">
+                                                           <img class="card-item__img--back" src="./img/harry-potter/luna-box.webp" alt="Luna Lovegood en caja">
                                                          </picture>
                                                          <div class="card-item__content">
                                                           <p class="card-item__licence">HARRY POTTER</p>
@@ -154,26 +160,35 @@
     </main>
 
    
-
     <!--COMIENZA EL FOOTER-->
-    <footer>
-      <div>
-        <ul>
-          <li><a href=""></a>SHOP</li>
-          <li><a href=""></a>INGRESAR</li>
-          <li><a href=""></a>CONTACTO</li>
-        </ul>
-      </div>
-      <span>
-        <h4>All rights reserved 2023 - Funkoshop &copy;</h4>
-      </span>
-      <div>
-        <img
-          src="./img/branding/isotype.svg"
-          alt="isotipo de la marca Funkoshop"
-        />
-      </div>
-    </footer>
+    <footer class="footer">
+      <nav class="navbar container">
+          <ul class="narvar__item">
+              <li class="navbar__item">
+                <a class="navbar__link" href=""></a>SHOP
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" class="navbar__link" href=""></a>REGISTRARSE
+              </li>
+              <li class="navbar__item" >
+                <a class="navbar__link" href=""></a>LOGIN
+              </li>
+              <li class="navbar__item">
+                <a class="navbar__link" href=""></a>CONTACTO
+              </li>
+          </ul>
+      <picture> 
+        <img src="../img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
+      </picture>
+    </nav>
+      
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+      
+      
+     </footer>
+     <!--fin del footer-->
+  
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
   </body>
 </html>
