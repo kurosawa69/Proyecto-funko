@@ -25,11 +25,15 @@ header {
     padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
     transition: background, .3s, ease-in-out;
+
     position: relative;
+
+
 }
 .navbar__link:hover {
     background-color: var(--primary-900); 
 }
+
 /*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;
