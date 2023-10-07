@@ -18,6 +18,9 @@
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
 
+  --light-font-solid:#fafaff;
+
+
   /*Typography*/
   --base-font: "Inter", sans-serif;
   --alternative-font: "Raleway", sans-serif;
@@ -42,6 +45,7 @@
   --spacing-16: 1.6rem;
   --spacing-12: 1.2rem;
   --spacing-8: 0.8rem;
+
 }
 
 *,

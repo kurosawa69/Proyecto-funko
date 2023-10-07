@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funkoshop|HOME</title>
@@ -11,36 +10,41 @@
 <body>
     <!--comienza el header-->
     <header>
- <nav class="navbar container">
+
+      <nav class="navbar container">
         <picture class="navbar__logo">
-        <a href="./index.html"><img src="./img/branding/logo_light_horizontal.svg" alt="Logotipo Funkoshop"></a>
+          <a href="./index.html"
+            ><img
+              src="./img/branding/logo_light_horizontal.svg"
+              alt="Logotipo Funkoshop"
+          /></a>
         </picture>
         <ul class="navbar__menu">
-            <li class="navbar__link">
-              <a href="/pages/shop.html">Shop</a>
-            </li>
-            <li class="navbar__link">
-              <a href="">Contaco</a>
-            </li>
-            <li class="navbar__link">
-              <a href="">Login</a>
-            </li>
-            <li>
-              <a href="./pages/cart.html">Carrito<img src="../img/icons/cart-icon.svg" alt=""></a>
-            </li>
-  
+          <li  class="navbar__item with-submenu">
+            <a class="navbar__link with-icon" href="" ></a>SHOP<iconify-icon icon="carbon:chevron-down"></iconify-icon>
+            <ul class="submenu">
+              <li class="submenu__item"> <a href="" class="submenu__link">Funkos</a></li>
+              <li class="submenu__item"> <a href="" class="submenu__link">Remeras</a></li>
+              <li class="submenu__item"> <a href="" class="submenu__link">Llaveros</a></li>
+            </ul>
+          </li>
+          <li class="navbar__link"><a href=""></a>CONTACTO</li>
+          <li class="navbar__link"><a href=""></a>LOGIN</li>
+          <li>
+            <a href=""><img src="./img/icons/cart-icon.svg" alt="" /></a>
+          </li>
         </ul>
-       
-    </nav>
+      </nav>
+
     </header>
  
         <!--aca comienza el banner-->
     
-        <section class="banner">
-            <article>
-              <h3>Nuevos Ingresos</h3>
-              <p>Descubrí el próximo Funko Pop de tu colección</p>
-              <a href="./page/shop.html">SHOP</a>
+        <section class="hero">
+            <article class="hero__content container">
+              <h3 class="hero__title">Nuevos Ingresos</h3>
+              <p class="hero__text">Descubrí el próximo Funko Pop de tu colección</p>
+              <a class="hero__link" href="./page/shop.html">SHOP</a>
             </article>
           </section> 
           <!--termina banner-->
@@ -50,184 +54,107 @@
   
 
     <!--Inicia el main que posee el contenido prinicpal en sus diferentes secciones de la pagina-->
-    <main>
-        <section>
-            <article>
-                <H3 style="font-size: 46px;">STAR WARS &  THE MANDALORIAN</H3>
-                <P style="font-size: 24px;">Disfruta de una saga que sigue agregando personajes a su colección</P>
-
-                <p style="font-size: 24px;"><a href="./pages/Shop">VER COLECCIÓN</a></p>
+    <main class="main-container">
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">STAR WARS &  THE MANDALORIAN</H3>
+                <p class="collection__text">Disfruta de una saga que sigue agregando personajes a su colección</P>
+                <a class="collection__link" href="./pages/Shop"> Ver colección</a>
             </article>
-            <picture>
+            <picture class="collection__cover">
                 <img src="img/star-wars/baby-yoda-1.webp" alt="Figura  funko de Grogu de la serie The Mandalorian">
             </picture>
         </section>
-        <section>
-            <article>
-                <picture>
-                    <img src="img/pokemon/vulpix-1.webp" alt="VULPIX">
-                </picture>
-            </section>
 
+        <section class="collection container">
+            <article class="collection__content">
+            <h3 class="collection__title">POKEMON INDIGO</h3>
+            <p class="collection__text">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
+            <a class="collection__link" href="./pages/Shop"> Ver colección</a>
             </article>
-            <h3 style="font-size: 46px;">POKEMON INDIGO</h3>
-            <p style="font-size: 24px;">Atrapa todos los que puedas y disfruta de una colección llena de amigos</p>
-            <p style="font-size: 24px;"><a href="./pages/Shop">VER COLECCIÓN</a></p>
+            <picture class="collection__cover">
+              <img src="img/pokemon/vulpix-1.webp" alt="VULPIX">
+          </picture>
+      </section>
+
         </section>
-        <section>
-            <article>
-                <H3 style=" font-size: 46px;">HARRY POTTER</H3>
-                <P style=" font-size: 24px;">Revive los recuerdos de una saga llena de magia y encanto</P>
-                <p style="font-size: 24px;"><a href="./pages/Shop">VER COLECCIÓN</a></p>
+        <section class="collection container">
+            <article class="collection__content">
+                <h3 class="collection__title">HARRY POTTER</h3>
+                <p class="collection__text">Revive los recuerdos de una saga llena de magia y encanto</p>
+                <a class="collection__link" href="./pages/Shop"> Ver colección</a>
             </article>
-            <picture>
+            <picture class="collection__cover">
                 <img src="img/harry-potter/snape-patronus-1.webp" alt="Figura coleccionable Funko del Patronus de  snape en la pelicula de Harry Potter">
             </picture>
         </section>
 
        
 
-<!-- seccion de slider-->
-<section class="nuevos-lanzamientos">
-    <h2>Ultimos Lanzamientos</h2>
-      <div class="slider-container">
- <!--Botones del slider -->
-         <div class="btn-slider">
-           <button id="anterior"><</button>    
-          </div>
- <!--Elementos que contienen la imagen y la  informacion del producto en una lista desordenada-->
-         <ul class="elementos">
+<!--SLIDER-->
+<section class="slider container">
+    <h2 class="slider__title">últimos Lanzamientos</h2>
+         <ul class="slider__items">
  <!--Cada elemento esta separada del otro por un li y dentro tiene un articulo que contiene el resto de la informacion-->
- 
-             <li class="elemento">
+             <li class="slider__item">
  <!--Un list item con un articulo dentro-->
- 
-                 <article >
-                     <a href="">
-  <!--se agrego el elemento i para posteriormente poder manipularlo flexiblemente sin afectar a los parrafos .-->
-                     <i>Nuevo</i>
-                         <img src="./Img/star-wars/trooper-1.webp" alt="trooper-1">
-                        <!--se elimino el elemento div que envolvia a los parrafos y al h4-->
-                             <p>STAR WARS</p>
-                             <h4>STORMTROOPER LIGHTSABER</h4>
-                             <p>$ 1799.99</p>
-                             <p>3 CUOTAS SIN INTERÉS</p>
+                 <article  class="card-item">
+                     <a class="card-item__link" href="">
+                      <picture class="card-item__cover">
+                        <img src="./Img/star-wars/trooper-1.webp" alt="trooper-1">
+                      </picture>
+                      <div class="card-item__content">
+                             <p class="card-item__licence">STAR WARS</p>
+                             <h4 class="card-item__name">STORMTROOPER LIGHTSABER</h4>
+                             <p class="card-item__price">$ 1799.99</p>
+                             <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                            </div>
                          </a>
                  </article>
- 
-  <!--Cada elemento esta separada del otro por un li y dentro tiene un articulo que contiene el resto de la informacion-->
- 
-             <li class="elemento">
-                 <!--Un list item con un articulo dentro-->
- 
-                 <article>
-                     <a href="">
-                         <i>Nuevo</i>
- 
-                         <img src="./Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
-                       
-                             <p>POKEMON</p>
-                             <h4>PIDGEOTTO</h4>
-                             <p>$ 1799.99</p>
-                             <p>3 CUOTAS SIN INTERÉS</p>
-                       
-                     </a>
-                 </article>
-             </li>
- 
- <!--Cada elemento esta separada del otro por un li y dentro tiene un articulo que contiene el resto de la informacion-->
- 
-             <li class="elemento">
-                 <article>
-                     <a href="">
-                         <i>Nuevo</i>
- 
-                       
-                         <img src="./Img/harry-potter/luna-1.webp" alt="Luna LOVEGOOD">
-                         
-                             <p>HARRY POTTER</p>
-                             <h4>LUNA LOVEGOOD LION MASK</h4>
-                             <p>$ 1799.99</p>
-                             <p>3 CUOTAS SIN INTERÉS</p>
-                        
-                     </a>
-                 </article>
-             </li>
- 
- <!--se cierra el elemento ul que contenia los elementos del slide-->
+                 </li>
+
+                 <li class="elemento">
+                  <!--Un list item con un articulo dentro-->
+                                  <article class="card-item" >
+                                      <a href="">
+                                       <picture class="card-item__cover">
+                                         <img src="./Img/pokemon/pidgeotto-1.webp" alt="pidgeotto-1">
+                                       </picture>
+                                       <div class="card-item__content">
+                                        <p class="card-item__licence">POKEMON</p>
+                                        <h4 class="card-item__name">PIDGEOTTO</h4>
+                                        <p class="card-item__price">$ 1799.99</p>
+                                        <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                             </div>
+                                          </a>
+                                  </article>
+                                  </li>
+
+                                  <li class="elemento">
+                                    <!--Un list item con un articulo dentro-->
+                                                    <article class="card-item">
+                                                        <a href="">
+                                                         <picture class="card-item__cover">
+                                                           <img src="./img/harry-potter/luna-1.webp" alt="Luna Lovegood">
+                                                         </picture>
+                                                         <div class="card-item__content">
+                                                          <p class="card-item__licence">HARRY POTTER</p>
+                                                          <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
+                                                          <p class="card-item__price">$ 1799.99</p>
+                                                          <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                                                               </div>
+                                                            </a>
+                                                    </article>
+                                                    </li>
          </ul>
- <!--se muestra el boton siguiente del slide -->        
-         <div class="btn-slider">
-             <button class="siguiente">></button>
-         </div>   
- 
-     </div>
- <!--se cierra el elemento div slider-container que contenia los botones y los elementos del slider-->
+
  
   </section>
 
     </main>
 
    
-    <div>
-        <ul>
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="img/star-wars/trooper-1.webp"
-                    alt="Figura coleccionable Funko de Stormtrooper"
-                  />
-                </picture>
-                <div>
-                  <p style="font-size: 14px">STAR WARS</p>
-                  <h4 style="font-size: 18px">STORMTROOPER LIGHTSABER</h4>
-                  <p style="font-size: 16px">$ 1799,99.-</p>
-                  <p style="font-size: 12px">3 CUOTAS SIN INTERÉS</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="img/pokemon/pidgeotto-1.webp"
-                    alt="Figura coleccionable "
-                  />
-                </picture>
-                <div>
-                  <p style="font-size: 14px">POKEMON</p>
-                  <h4 style="font-size: 18px">PIDGEOTTO</h4>
-                  <p style="font-size: 16px">$ 1799,99.-</p>
-                  <p style="font-size: 12px">3 CUOTAS SIN INTERÉS</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <picture>
-                  <img
-                    src="img/harry-potter/luna-1.webp"
-                    alt="Figura coleccionable "
-                  />
-                </picture>
-                <div>
-                  <p style="font-size: 14px">HARRY POTTER</p>
-                  <h4 style="font-size: 18px">LUNA LOVEGOOD LION MASK</h4>
-                  <p style="font-size: 16px">$ 1799,99.-</p>
-                  <p style="font-size: 12px">3 CUOTAS SIN INTERÉS</p>
-                </div>
-              </a>
-            </article>
-          </li>
-        </ul>
-      </section>
-    </main>
+
     <!--COMIENZA EL FOOTER-->
     <footer>
       <div>
@@ -247,5 +174,6 @@
         />
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
   </body>
 </html>
