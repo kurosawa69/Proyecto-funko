@@ -25,22 +25,14 @@ header {
     padding: var(--spacing-8) var(--spacing-16);
     display: inline-block;
     transition: background, .3s, ease-in-out;
-<<<<<<< HEAD
-    position: relative;
-=======
 
     position: relative;
 
 
->>>>>>> 5a488d4401194af45c22c454a3fbe42b2583cb65
 }
 .navbar__link:hover {
     background-color: var(--primary-900); 
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 5a488d4401194af45c22c454a3fbe42b2583cb65
 /*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;
