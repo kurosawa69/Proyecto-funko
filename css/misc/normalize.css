@@ -17,7 +17,13 @@
 
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
+<<<<<<< HEAD
   --light-font-solid:#fafaff;
+=======
+
+  --light-font-solid:#fafaff;
+
+>>>>>>> 5a488d4401194af45c22c454a3fbe42b2583cb65
 
   /*Typography*/
   --base-font: "Inter", sans-serif;
@@ -32,6 +38,7 @@
   --font-small: 1.6em;
   --font-xsmall: 1.4em;
 
+<<<<<<< HEAD
     /*Spacings*/
     --spacing-128: 12.8rem;
     --spacing-68: 6.8rem;
@@ -43,6 +50,20 @@
     --spacing-16: 1.6rem;
     --spacing-12: 1.2rem;
     --spacing-8: 0.8rem;
+=======
+  /*Spacings*/
+  --spacing-128: 12.8rem;
+  --spacing-68: 6.8rem;
+  --spacing-36: 3.6rem;
+  --spacing-28: 2.8rem;
+  --spacing-26: 2.6rem;
+  --spacing-24: 2.4rem;
+  --spacing-20: 2rem;
+  --spacing-16: 1.6rem;
+  --spacing-12: 1.2rem;
+  --spacing-8: 0.8rem;
+
+>>>>>>> 5a488d4401194af45c22c454a3fbe42b2583cb65
 }
 
 *,
