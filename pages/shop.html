@@ -27,16 +27,121 @@
             </ul>
               
         </nav>
-    </header><!--fin del header-->
+    </header>
+<section class="shop">
+    <aside>
+            <ul class="menu">
+                <li class="sub-menu">
+                    <h3 class="tittle-aside">BUSCAR</h3>
+                    <input class="search__aside" type="text" placeholder="item o categoria"> 
+                </li>
+                <li class="sub-menu">
+                    <h3 class="tittle-aside">ORDENAR POR</h3>
+            <select class="select__aside">
+                <option>Mayor a Menor</option>
+                <option>Menor a Mayor</option>
+                <option>Ofertas</option>
+                <option>Envio gratis</option>
+            </select>
+                </li>
+                <li class="sub-menu">
+                    <h3 class="tittle-aside">PRECIO</h3>
+                    <div class="min-max">
+                     <span>
+                     <p>MIN <input type="number" placeholder="0">
+                     - MAX <input type="number" placeholder="10"></p>
+                     </span>
+                </li>
+                <li class="sub-menu">
+                    <h3 class="tittle-aside">FILTRAR</h3>
+                    <ul class="aside-list__checkbox">
+                      <li><input type="checkbox"  name="Nuevos" >
+                    <label for="Nuevos">NUEVOS</label><br></li>
+                      <li><input type="checkbox"  name="Nuevos" >
+                    <label for="Nuevos">OFERTA</label><br></li>
+                      <li><input type="checkbox"  name="Nuevos" >
+                    <label for="Nuevos">EDICION ESPECIAL</label><br></li>
+                      <li><input type="checkbox"  name="Nuevos" >
+                    <label for="Nuevos">FAVORITOS</label><br></li>
+                    </ul>
+                </li>
+            </ul>
+    </aside>
+    <main>
+        <div class="container__card">
+            <div class="card">
+                <h3 class="card__new">NUEVO</h3>
+                <img class="card__image" src="../img/star-wars/trooper-1.webp" alt="figura STORMTROOPER">
+                <div class="card__description">
+                    <p class="card__collection">STAR WARS</p>
+                    <h4 class="card__character">STORMTROOPER LIGHTSABER</h4>
+                    <p class="card__price">$ 1799.99</p>
+                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card__new">NUEVO</h3>
+                <img class="card__image" src="../img/pokemon/pidgeotto-1.webp" alt="figura PIDGEOTTO">
+                <div class="card__description">
+                    <p class="card__collection">POKEMON</p>
+                    <h4 class="card__character">PIDGEOTTO</h4>
+                    <p class="card__price">$ 1799.99</p>
+                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card__new">NUEVO</h3>
+                <img class="card__image" src="../img/harry-potter/luna-1.webp" alt="figura LUNA">
+                <div class="card__description">
+                    <p class="card__collection">HARRY POTTER</p>
+                    <h4 class="card__character">LUNA LOVEGOOD LION MASK</h4>
+                    <p class="card__price">$ 1799.99</p>
+                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
+                </div>
+            </div>        
+        </div>
+    </main>
+</section>
+
+
+    <!--comienza seccion de cards
+
+    <section class="cards__container">
+      <div class="box-card">
+        <article class="card">
+            <span class="new">NUEVO</span>
+            <div class="card__image">
+                <img src="../img/star-wars/trooper-1.webp" alt="trooper-1">
+            </div>
+            <ul class="description">
+                <li><p class="description__collection">STAR WARS</p></li>
+                <li><h4 class="description__character">STORMTROOPER LIGHTSABER</h4></li>
+                <li><p class="description__price">$ 1799.99</p></li>
+                <li><p class="description__info">3 CUOTAS SIN INTERÉS</p></li>
+            </ul>
+            </li>
+                <li>
+                    <a class="boton-menu boton-carrito" href="./carrito.html">
+                        <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <footer>
+            <p class="texto-footer">© 2022 Carpi Coder</p>
+        </footer>
+    </aside>
+    
+    <!--fin del header-->
     <!--comienza el aside-->
-    <div>
-    <aside class="box-container__aside">
-        <div>
+   <!-- <div class="shop">etiqueta para posicionar aside y cards(padre de aside y de cards)-->
+    <!--<aside class="box-container__aside">contenedor padre de aside-->
+        <!--<div>
              <h3 class="tittle-aside">BUSCAR</h3>
      <form action="save-information">
              <input type="text" placeholder="item o categoria">
         </div>
-        <div>
+        <div><
             <h3 class="tittle-aside">ORDENAR POR</h3>
             <select class="select__aside">
                 <option>Mayor a Menor</option>
@@ -70,8 +175,8 @@
              </ul>
         </div>
      </form>
-    </aside> <!--fin del aside-->
-    <!--comienza seccion de cards-->
+    </aside>fin del aside-->
+    <!--comienza seccion de cards
 <main class="box-container__articles">
     <section class="cards__container">
       <div class="box-card">
@@ -114,7 +219,7 @@
            
     </section>
 </main>
-    </div>        <!--<li>
+    </div>        <li>
                 <article class="box-container__articles-item">
                     <a href="">
                         <div class="btn-container">
