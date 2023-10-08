@@ -28,14 +28,25 @@ header {
 }
 .navbar__link:hover {
   background-color: rgb(255, 51, 51, 0.9);
-
 }
-
-h2 {
+/*termina header*/
+/*empieza el Form*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.titulo {
+  margin-bottom: 1rem;
+}
+.register__title {
+  font-size: var(--font-jumbo);
   text-align: left;
-  font-size: var(-font-jumbo 3.8em);
+  justify-content: left;
 }
-
+.formulario .formulario__grupo1 {
+  display: flex;
+  flex-direction: row;
+}
 /*footer*/
 .footer {
   background-color: var(--dark-bg-solid);
