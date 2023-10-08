@@ -3,10 +3,9 @@
     display: grid;
     grid-template-columns: 1fr 3fr;
 }
-
+/*ESTILOS PARA ASIDE*/
 aside{
-    font-family: var(--base-font);
-    padding: 5rem 2rem 0 10rem;
+    font-family: var(--base-font); 
     color: black;
     font-weight: 500;
 }
@@ -14,13 +13,15 @@ aside{
 .menu{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2em;
+    align-items: center;
+    margin-top: 5rem;
 }
 
 .sub-menu{
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1.5em;
 }
 
 .tittle-aside{
@@ -31,8 +32,8 @@ aside{
 .search__aside{
     border: 0.2px #30343F solid;
     color: #606674;
-    width: 235px;
-    height: 40px;
+    width: 15em;
+    height: 2.5em;
     border-radius: 6px;
     text-align:justify;
     text-indent: 2%;
@@ -40,9 +41,8 @@ aside{
 
 .select__aside{
     border: 0.2px #30343F solid;
-    color: #606674;
-    width: 235px;
-    height: 40px;
+    width: 15em;
+    height: 2.5em;
     border-radius: 6px;
     text-align:justify;
     text-indent: 2%;
@@ -64,11 +64,10 @@ aside{
 }
 
 .min-max input{
- width: 60px;
- height: 25px;
+ width: 4em;
+ height: 1.6em;
  border-radius: 6px;
- margin-left: 10px;
- margin-right: 5px;
+ 
 }
 
 .aside-list__checkbox{
@@ -77,13 +76,16 @@ aside{
 }
 
 /*ESTILOS PARA CARDS*/
-
-
 main{
     padding: 5rem 10rem 1rem 0;
     display: grid;
     grid-template-columns: repeat(3 1fr);
     gap: 1rem;
+}
+
+.container__card{
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -141,128 +143,27 @@ main{
 }
 
 
-
-/*body{
-    max-width: 1200px;
-}
-
-.shop{
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-}
-
-.box-container__aside {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    border: 1px black solid;
-    font-family: var(--base-font);
-}
-.box-container__aside > div {
-    margin-bottom: 1rem;
-  }
-
-div .tittle-aside{
-  
-    font-size: var(--font-large);
-    font-weight: 600;
-}
-
- .min-max{
-    font-size: var(--font-small);
-    display: flex;
-    justify-content: space-between;
-
-}
-
-
-li{
-    font-size: var(--font-medium);
-}
-
-input {
-    font-size: var(--font-medium);
-    border: 1px black solid;
-}
-
-.select__aside{
-    font-size: var(--font-medium);
-    border: 1px black solid;
-
-}
-
-option{
-    font-family: var(--base-font);
-    font-size: var(--font-medium);
-
-}
-
-
-
-.cards__container{
+/* Estilos para cards */
+main {
+    padding: 5rem 2rem 1rem 2rem; /* Ajustado el padding */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
-.card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px black solid;
-    width: 33%;
-    height: 500px
+.card {
+    width: 30%; /* Tarjetas ocupan el 30% del contenedor */
+    margin-bottom: 2rem; /* Espacio entre tarjetas */
 }
 
-.card__image{
-    display: flex;
-    width: 100%;
-    height: 75%;
+@media (max-width: 768px) {
+    .card {
+        width: 48%; /* En dispositivos más pequeños, ocupan el 48% del contenedor */
+    }
 }
 
-image picture{
-    width: 100%;
+@media (max-width: 576px) {
+    .card {
+        width: 100%; /* En dispositivos móviles, ocupan el 100% del contenedor */
+    }
 }
-
-.new{
-    align-self: self-end;
-    font-size: var(--font-xsmall);
-    font-weight: bold;
-    background-color: var(--primary-solid);
-    color: white;
-    padding: 1rem 2rem;
-}
-
-.description__collection{
-    font-size: var(--font-small);
-    font-weight: 500;
-    color: var(--dark-500);
-
-}
-
-.description__character{
-    width: 100%;
-    font-size: var(--font-medium);
-    font-weight: 700;
-
-}
-
-.description__price{
-    font-size: var(--font-small);
-    font-weight: 400;
-    color: var(--dark-500);
-
-}
-
-.description__info{
-    font-size: var(--font-xsmall);
-    font-weight: 700;
-    color: var(--secondary-solid);
-
-}
-
-
-
-*/
