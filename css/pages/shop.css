@@ -53,9 +53,9 @@ aside{
     color: var(--light-bg-solid);
 }
 
-.select__aside option :hover{
+/*.select__aside option :hover{
     
-}
+}*/
 
 .min-max{
     font-size: .8em;
