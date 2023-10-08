@@ -1,7 +1,4 @@
-div {
-    display: flex;
-    gap: var(--spacing-20);
-}
+
 
 .edit__title {
 display: flex;
@@ -15,20 +12,11 @@ padding-top: 20px;
 
 }
 
-.selectores {
-    display: flex;
-    align-items: start;
-    font-family: Inter;
-    font-size: 24px;
-    line-height: 29px;
-    letter-spacing: 0.04em;
 
- 
-}
 
 .labels {
     display:inline-flex;
-    align-items: start;
+    align-items: center;
     font-size: var(--font-large);
     font-family: var(--base-font);
     font-size: 24px;
@@ -48,15 +36,18 @@ left: 254.25px;
 border-radius: 4px;
 cursor: pointer;
 border-bottom: 2px, var(--dark-solid);
-
-
 }
 
 .padding {
+    display: flex;
     padding-top: 20px;
+    gap: var(--spacing-20);
+
     
 }
-
+.gap {
+    gap: var(--spacing-20);
+}
 .selector__title {
 font-family: var(--alternative-font);
 font-size: var(--font-large);
@@ -84,11 +75,72 @@ font-weight: 500;
     font-size: var(--font-medium);
     font-weight: 300;  
     text-align: left;
+    display: flex;
+    align-items: center;
 
 }
 
-.centrarPrueba {
+.content__text div {
     display: flex;
     align-items: center;
-    vertical-align: middle;
+}
+
+.select__boxes {
+    width: 243.03px;
+    height: 44.28px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.upload__img {
+    display: flex;
+    justify-content:flex-start;
+   
+}
+ .upload__img div {
+    margin: 20px;
+    width: 150px;
+    text-align: center;
+ }
+
+
+.upload__img div img {
+    height: 173px;
+    border-bottom: 2px solid var(--primary-900);
+}
+
+
+.upload__img div span {
+    display: block;
+    text-align: center;
+    margin-top: 1px; 
+}
+
+
+.inputs li {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-20);
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 500;
+}
+
+::placeholder {
+    font-family: var(--base-font);
+}
+
+.btn-red {
+    background-color: var(--primary-900);
+    border: none;
+    border-radius: 6%;
+    color: var(--light-font-solid);
+    width: 175px;
+    height: 44.33px;
+}
+
+.paraDiv {
+    display: flex;
+    align-items: center;
 }
