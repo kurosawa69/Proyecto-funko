@@ -77,10 +77,11 @@ aside{
 
 /*ESTILOS PARA CARDS*/
 main{
-    padding: 5rem 10rem 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(3 1fr);
     gap: 1rem;
+    padding: 5rem 2rem 1rem 2rem; /* Ajustando*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .container__card{
@@ -92,7 +93,10 @@ main{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 30%; /* Tarjetas ocupan el 30% del contenedor */
+    margin-bottom: 2rem; 
 }
+
 
 .card__image{
     max-width: 100%;
@@ -110,7 +114,7 @@ main{
     background-color: var(--primary-solid);
     color: white;
     padding: 0.5rem 1rem;
-    margin-bottom: 0%;
+    position: absolute;
    
 }
 
@@ -142,28 +146,16 @@ main{
 
 }
 
-
-/* Estilos para cards */
-main {
-    padding: 5rem 2rem 1rem 2rem; /* Ajustado el padding */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.card {
-    width: 30%; /* Tarjetas ocupan el 30% del contenedor */
-    margin-bottom: 2rem; /* Espacio entre tarjetas */
-}
-
-@media (max-width: 768px) {
+/*DISEÑO ADAPTATIVO*/
+@media (max-width: 980px) {
     .card {
-        width: 48%; /* En dispositivos más pequeños, ocupan el 48% del contenedor */
+        width: 48%; /* En dispositivos más pequeños, cards ocupan el 48% del contenedor */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 775px) {
     .card {
-        width: 100%; /* En dispositivos móviles, ocupan el 100% del contenedor */
+        width: 100%; /* En dispositivos móviles, cards ocupan el 100% del contenedor */
     }
 }
+
