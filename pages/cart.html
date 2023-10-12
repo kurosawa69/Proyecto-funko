@@ -10,21 +10,32 @@
 <body>
     <!--comienza el header-->
     <header>
-        <nav>
-            <picture>
+        <nav class="navbar container">
+            <picture class="navbar__logo">
                 <a href="./index.html"><img src="../img/branding/logo_light_horizontal.svg" alt="Logotipo Funkoshop"></a>
             </picture>
-            <ul>
-                <li><a href="./shop.html">Shop</a></li>
-                <li><a href=""></a>Contaco</li>
-                <li><a href=""></a>Login</li>
-                <li><a href=""><img src="./img/icons/cart-icon.svg" alt=""></a></li>
-             </ul>
+            <ul class="navbar__menu">
+                <li  class="navbar__item with-submenu">
+                  <a class="navbar__link with-icon" href="" >SHOP<iconify-icon icon="carbon:chevron-down"></iconify-icon></a>
+                  <ul class="submenu">
+                    <li class="submenu__item"> <a href="" class="submenu__link">Funkos</a></li>
+                    <li class="submenu__item"> <a href="" class="submenu__link">Remeras</a></li>
+                    <li class="submenu__item"> <a href="" class="submenu__link">Llaveros</a></li>
+                  </ul>
+                </li>
+                <li class="navbar__link"><a href=""></a>CONTACTO</li>
+                <li class="navbar__link"><a href=""></a>LOGIN</li>
+                <li class="navbar__link">
+                  <a href=""> <img src="/img/icons/cart-icon.svg" alt="" /></a>
+                </li>
+              </ul>
         </nav>
     </header><!--fin del header-->
     <!--inicia seccion carrito de compras-->
     <section>
-        <h2>CARRITO DE COMPRAS</h2>
+        <div class="cart__title">
+        <h2 class="cart_title">CARRITO DE COMPRAS</h2>
+    </div>
         <div>
             <ul>
                 <li>DETALLE DEL PRODUCTO</li>
@@ -126,6 +137,8 @@
         <img src="../img/branding/isotype.svg" alt="isotipo de la marca Funkoshop">
     </div>
    </footer>
+   <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
+
     
 </body>
 </html>
