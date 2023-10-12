@@ -44,9 +44,34 @@ header {
     
 }
 .cart_title{
-    width: 
-    415px;
+    font-family: var(--alternative-font);
+    width: 415px;
     border-bottom: 2px solid var(--primary-solid);
-
-
+}
+.header__table{
+    border-radius: 10px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 1400px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: var(--light-font-solid)
+}
+.header_table{
+    font-weight: bold;
+    gap: 350px;
+    font-family: var(--alternative-font);
+    font-size: var(--font-medium);
+    display: flex;
+ 
+}
+.header__container{
+    display: inline;
+    align-items: left;
+    justify-content: left;
+}
+.cart__item{
+    dis
 }
