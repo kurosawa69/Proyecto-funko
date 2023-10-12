@@ -49,6 +49,7 @@ header {
     border-bottom: 2px solid var(--primary-solid);
 }
 .header__table{
+    margin-bottom: 56px;
     border-radius: 10px;
     justify-content: center;
     display: flex;
@@ -72,6 +73,32 @@ header {
     align-items: left;
     justify-content: left;
 }
+
 .cart__item{
-    dis
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 50px;
+    display: flex;
+
+}
+.cart__item img {
+    width: 118px;
+}
+.cart__description{
+  
+    width: 400px;
+    display: block;
+}
+.cart__input{
+    height: 30px;
+    width: 70px;
+}
+.cart__btns{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.input__form{
+    display: flex;
 }
