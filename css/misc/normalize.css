@@ -6,9 +6,9 @@
   --primary-300: rgb(255, 51, 51, 0.3);
 
   --secondary-solid: #1d84b5;
-  --secondar-900: rgb(29, 132, 181, 0.9);
-  --secondar-500: rgb(29, 132, 181, 0.5);
-  --secondar-300: rgb(29, 132, 181, 0.3);
+  --secondary-900: rgb(29, 132, 181, 0.9);
+  --secondary-500: rgb(29, 132, 181, 0.5);
+  --secondary-300: rgb(29, 132, 181, 0.3);
 
   --dark-solid: #1f1f1f;
   --dark-900: rgb(31, 31, 31, 0.9);
@@ -17,7 +17,9 @@
 
   --dark-bg-solid: #30343f;
   --light-bg-solid: #fafaff;
+
   --light-font-solid:#fafaff;
+
 
   /*Typography*/
   --base-font: "Inter", sans-serif;
@@ -85,4 +87,3 @@ p {
   max-width: 1200px;
   margin: 0 auto;
 }
-
