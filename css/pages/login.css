@@ -1,0 +1,50 @@
+@import url(../misc/normalize.css);
+@import url(../partials/header.css);
+@import url(../partials/footer.css);
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.layout__section {
+    margin-top: 30px;
+    Width: 515px;
+    Height: 289.13px;
+    justify-content: center;
+    align-items: center;
+}
+.title__login {
+    display: flex;
+    font-size: var(--font-large);
+    justify-content: center;
+    padding-bottom: 30px;
+;
+
+}
+
+.display__form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boxes__inputs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 243.03px;
+    height: 44.28px;
+    margin: 0 auto;
+
+}
+
+.gap_2 {
+    gap: 89px;
+}
+
+.check {
+    display: flex;
+    justify-content: center;
+}
