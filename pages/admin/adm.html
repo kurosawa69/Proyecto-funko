@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="../../css/index.css"/>
     <script
       src="https://kit.fontawesome.com/02d604df7e.js"
       crossorigin="anonymous"
@@ -13,30 +13,35 @@
   <body>
     <!--comienza el header-->
     <header>
-      <nav>
-        <picture>
-          <a href="./index.html"
-            ><img
-              src="./img/branding/logo_light_horizontal.svg"
-              alt="Logotipo Funkoshop"
-          /></a>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="../../index.html"><img
+              src="../../img/branding/logo_light_horizontal.svg"  alt="Logotipo Funkoshop"/></a>
         </picture>
-        <ul>
-          <li><a href="">VER TIENDA</a></li>
-          <li><a href=""></a>ADMIN</li>
-          <li><a href=""></a>SALIR</li>
-          <li></li>
+        <ul class="navbar__menu">
+          <li class="navbar__link">
+            <a href="../../index.html">VER TIENDA</a>
+          </li>
+          <li class="navbar__link">
+            <a href="adm.html">ADMIN</a>
+          </li>
+          <li class="navbar__link">
+            <a href="">SALIR</a>
+          </li>
         </ul>
       </nav>
     </header>
     <!--fin del header-->
-    <main>
-      <i class="fa-solid fa-magnifying-glass"></i>
-      <input type="text" />
+    <main class="orden container">
+      <label class="labels" for="">
+        <i class="fa-solid fa-magnifying-glass gap_adm"><input class="boxes__admin" type="text" placeholder="codigo, nombre o categoria" /></i>
+        
+      </label>
+      
       <section class="titulo_tabla_admin">
-        <h3>LISTADO DE PRODUCTOS</h3>
-        <span>AGREGAR</span>
-        <i class="fa-solid fa-square-plus"></i>
+        <h3 class="title__admin">LISTADO DE PRODUCTOS</h3>
+        <span>AGREGAR <button><i class="fa-solid fa-square-plus"></i></button></span>
+        
       </section>
       <table class="listado_de_producto">
         <thead>
@@ -157,23 +162,28 @@
     </main>
     <!--comienza el footer-->
     <footer>
-      <div>
-        <ul>
-          <li><a href=""></a>SHOP</li>
-          <li><a href=""></a>REGISTRARSE</li>
-          <li><a href=""></a>INGRESAR</li>
-          <li><a href=""></a>CONTACTO</li>
-        </ul>
+      <nav class=" navbar container">
+        <div>
+          <ul>
+            <li><a href=""></a>SHOP</li>
+            <li><a href=""></a>REGISTRARSE</li>
+            <li><a href=""></a>INGRESAR</li>
+            <li><a href=""></a>CONTACTO</li>
+          </ul>
+        
+   
       </div>
       <span>
         <h4>All rights reserved 2023 - Funkoshop &copy;</h4>
       </span>
       <div>
         <img
-          src="./img/branding/isotype.svg"
+          src="../../img/branding/isotype.svg"
           alt="isotipo de la marca Funkoshop"
         />
       </div>
+      </nav>
+ 
     </footer>
   </body>
 </html>
