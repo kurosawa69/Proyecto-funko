@@ -6,3 +6,35 @@
 background color {
   color: black;
 }
+
+
+.orden {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.title__admin {
+  display: flex;
+    font-size: var(--font-large);
+    justify-content: left;
+    padding-bottom: 30px;
+}
+
+.boxes__admin {
+  display: inline;
+  width: 243.03px;
+  height: 44.28px;
+  margin: 0 auto;
+}
+
+.part {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gap_adm {
+  gap: var(--spacing-26);
+
+}

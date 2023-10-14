@@ -164,6 +164,10 @@ padding: var(--spacing-16);
     font-weight: 500;
 }
 
+.card-item picture {
+   
+    height: 34em;
+}
 
 
 @keyframes fade{
