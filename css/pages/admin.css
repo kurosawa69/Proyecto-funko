@@ -16,7 +16,6 @@ background color {
 }
 
 .title__admin {
-  display: flex;
     font-size: var(--font-large);
     justify-content: left;
     padding-bottom: 30px;
@@ -37,4 +36,27 @@ background color {
 .gap_adm {
   gap: var(--spacing-26);
 
+}
+
+tr, th {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  padding: 1rem;
+  text-align: left;
+}
+
+tr, td {
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  padding: 1rem;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__agregar {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
 }
