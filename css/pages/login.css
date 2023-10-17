@@ -2,11 +2,7 @@
 @import url(../partials/header.css);
 @import url(../partials/footer.css);
 
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+
 
 .layout__section {
     margin-top: 30px;
@@ -45,6 +41,29 @@ footer {
 }
 
 .check {
+    gap: var(--spacing-26);
     display: flex;
     justify-content: center;
+}
+
+.centrar__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color__pws {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-solid);
+
+}
+
+
+.footer__down {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
