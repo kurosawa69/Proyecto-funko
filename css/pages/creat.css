@@ -122,8 +122,8 @@ header {
   border-bottom: 2px, var(--dark-solid);
 }
 
-p {
-  font-size: 1 em;
+.seleccion_archivo {
+  font-size: var(--font-xsmall);
   margin-left: 20px;
 }
 .inputs li {
