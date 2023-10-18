@@ -59,4 +59,27 @@ tr, td {
 .text__agregar {
   font-family: var(--base-font);
   font-size: var(--font-small);
+  width: 234px;
+  text-align: center;
+}
+
+.fa-solid.fa-pen {
+  color: var(--secondary-solid);
+}
+
+.fa-regular.fa-trash-can {
+  color: var(--primary-solid);
+}
+
+.fa-solid.fa-square-plus{
+  padding: 8px;
+  gap: var(--spacing-26);
+color: var(--primary-solid);
+width: 20px;
+font-size: var(--font-large);
+}
+
+.square-btn{
+  border: none;
+  width: 20px;
 }
