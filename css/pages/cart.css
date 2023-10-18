@@ -1,0 +1,12 @@
+
+
+.title__cart{
+    display: flex;
+    align-items: start;
+    font-size: var(--font-jumbo);
+    font-weight: 700;
+    line-height: 49px;
+    text-align: right;
+    padding-top: 20px;
+    margin-bottom:  1px (--primary-solid);
+}
