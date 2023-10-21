@@ -32,72 +32,46 @@
         </nav>
     </header><!--fin del header-->
     <!--inicia seccion carrito de compras-->
-    <section>
-        <h2>CARRITO DE COMPRAS</h2>
-        <div>
-            <ul>
-                <li>DETALLE DEL PRODUCTO</li>
-                <li>CANTIDAD</li>
-                <li>TOTAL</li>
+    <section class="cart">
+        <h2 class="title__cart">CARRITO DE COMPRAS</h2>
+        <div class="cart__container__menu">
+            <ul class="cart__menu">
+                <li class="cart__submenu">DETALLE DEL PRODUCTO</li>
+                <li class="cart__submenu">CANTIDAD</li>
+                <li class="cart__submenu">TOTAL</li>
             </ul>
         </div>
-        <article> <!--pongo cada articulo en forma de lista para posicionar los elementos-->
-            <ul>
-                <li>
-                    <picture>
+        <article class="container__cart__items"> <!--pongo cada articulo en forma de lista para posicionar los elementos-->
+            <ul class="cart__item">
+                <li class="cart__item__details">
+                    <picture class="cart__image">
                         <img src="../img/star-wars/baby-yoda-1.webp" alt="imagen de baby Yoda">
                     </picture>
-                    <span>
-                        <h4>BABY YODA BLUEBALL</h4>
-                        <p>STAR WARS</p>
-                        <p>precio: $ 1799,99</p>
+                    <span class="cart__container__info">
+                        <h4 class="cart__character">BABY YODA BLUEBALL</h4>
+                        <p class="cart__collection">STAR WARS</p>
+                        <p class="cart__price__info">precio: $ 1799,99</p>
                     </span>
                 </li>
-                <li>
+                <li class="cart__item__quantity">
                     <form>
-                        <input>
-                        <button>+</button><!--el + y - pueden ser iconos-->
-                        <button>-</button>
+                        <input class="number__cart__quantity">
+                        <button class="button__cart__quantity">+</button><!--el + y - pueden ser iconos-->
+                        <button class="button__cart__quantity">-</button>
                       </form>
                 </li>
-                <li>
-                    <span>$ 3599.98</span>
+                <li class="cart__item__price">
+                    <span class="cart__price__subtotal">$ 3599.98</span>
                 </li>
-                <li>
-                    <button>X<!--acá agregar el icono correspondiente--></button>
+                <li class="cart__item__remove">
+                    <button class="remove__button">X<!--acá agregar el icono correspondiente--></button>
                 </li>
             </ul>
         </article>
     <!--repito las lineas anteriores con otro articulo-->
-        <article> 
-        <ul>
-            <li>
-                <picture>
-                    <img src="../img/pokemon/pidgeotto-1.webp"alt="imagen de pidgeotto">
-                </picture>
-                <span>
-                    <h4>PIDGEOTTO</h4>
-                    <p>POKEMON</p>
-                    <p>Precio unitario: $ 1799,99</p>
-                </span>
-            </li>
-            <li>
-                <form>
-                    <input>
-                    <button>+</button>
-                    <button>-</button>
-                  </form>
-            </li>
-            <li>
-                <span>$ 1799.99</span>
-            </li>
-            <li>
-                <button>X<!--acá agregar el icono correspondiente--></button>
-            </li>
-        </ul>
-    </article>
-    <h2>RESUMEN</h2>
-    <div>
+
+    <h2 class="cart__summary__title">RESUMEN</h2>
+    <div class="cart__container__summary">
         <ul>
             <li>
                 <p>CANTIDAD DE ELEMENTOS</p>
