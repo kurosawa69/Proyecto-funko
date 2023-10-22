@@ -16,7 +16,7 @@
 .cart__menu{
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content:space-around;
     margin-top: var(--spacing-36);
     background-color:#FAFAFF;
     padding:var(--spacing-16);
@@ -35,7 +35,11 @@
 /*display: flex;
 flex-wrap: wrap;*/display: flex;
     grid-template-columns: 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
-
+    background-color: var(--light-bg-solid);
+    padding: 16px;
+    margin: 16px;
+    border-radius: 25px;
+    box-shadow: 1px 1px 1px 1px #00000040;
 
    
 }
@@ -45,22 +49,22 @@ flex-wrap: wrap;*/display: flex;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: var(--spacing-14);
-    width: 50%;
+    width: 35%;
 }
 
 
 .cart__container__info{
     display: flex;
     flex-direction: column;
-    gap: var(--spacing-24);
+    gap: var(--spacing-8);
     align-items: start;
 
     
 }
 .cart__item__quantity{
- 
+    margin-left: 9%;
+
     display:flex;
-    justify-content: space-between;
 
     
 }
@@ -82,18 +86,29 @@ flex-wrap: wrap;*/display: flex;
 .cart__item__price{
     display: flex;
 align-items: center;
-justify-content: center
+justify-content: center;
+margin-left: 10%;
 }
 
 .cart__item__remove{
     display: flex;
-    align-items: center
+    align-items: center;
+    margin-right: 15px;
+    
+}
+
+.remove__button{
+    border-radius: 100%;
+    width: 28px;
+    height: 28px;
+    color: var(--primary-900);
 }
 .cart__price__info{
     font-family: var( --alternative-font) ;
     font-size: var( --font-xsmall)  ;
 font-weight: 1000 ;
 }
+
 
 
 .cart__image{
@@ -113,31 +128,31 @@ font-weight: 1000 ;
 
 .cart__item{
     display: flex;
+    justify-content: space-between;
 }
 .form__input{
     display: flex;
     align-items: center;
 }
   
-.span_precio{
-    margin-left: 400px;
-    display: flex;
-gap: 10px;}
+
 
 .number__cart__quantity{
-
-    margin-left: 35px;
-    width: 80px;
+    width: 89px;
     height: 40px;
 }
 .button__column{
-
-    gap: 10px;
+padding: 4px;
+    gap: 5px;
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
 }
 .button__cart__quantity{
-    width: 30px;
-    height: 25px;
+    
+    width: 18px;
+    height: 18px;
+}
+
+.cart__price__subtotal{
+    font-size: var( --font-medium);
 }
