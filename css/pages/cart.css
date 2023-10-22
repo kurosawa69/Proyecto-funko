@@ -221,3 +221,7 @@ justify-content: flex-end;
     color: #f2f2f2;
     background-color: #FF3333;
 }
+.cart_container{
+    display: flex;
+    justify-content: center;
+}
