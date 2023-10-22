@@ -50,7 +50,7 @@ flex-wrap: wrap;*/display: flex;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: var(--spacing-14);
-    width: 48%;
+    width: 40%;
 }
 
 
@@ -83,13 +83,15 @@ justify-content: center
 }
 
 .cart__item__price{
+
     display: flex;
 align-items: center;
 justify-content: center;
-margin-left: 15%;
+margin-left: 200px;
 }
 
 .cart__item__remove{
+
     display: flex;
     align-items: center;
     margin-right: 15px;
@@ -133,8 +135,7 @@ margin-left: 15%;
 .cart__item{
     border-style: none;
     display: flex;
-    justify-content: space-between;
-}
+justify-content: space-between;}
 .form___input{
     display: flex;
     align-items: center;
@@ -143,6 +144,7 @@ margin-left: 15%;
 
 
 .number__cart__quantity{
+    margin-left: 85px;
   font-family: var(--base-font);
   
   font-weight: 600;
