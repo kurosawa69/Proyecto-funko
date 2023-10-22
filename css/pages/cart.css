@@ -76,7 +76,7 @@ justify-content: center
 .cart__collection{
     font-family: var(--base-font);
     font-size: var(--font-xsmall);
-    font-weight:500 ;
+    font-weight:550 ;
     
 
 }
@@ -102,14 +102,14 @@ margin-left: 15%;
     width: 28px;
     height: 28px;
     color: var(--primary-900);
-    border: 3px solid #F24E1E; /* Añade un borde de 2px de ancho con el color #F24E1E */
+    border: 3px solid #F24E1E; 
 
 }
 .cart__price__info{
     margin-top: 15px;
     font-family: var( --alternative-font) ;
-    font-size: var( --font-xsmall)  
-}
+    font-size: var( --font-xsmall) ;
+    font-weight: 500; }
 
 
 
@@ -141,7 +141,7 @@ margin-left: 15%;
 
 
 .number__cart__quantity{
-    border: 2px solid #C9C9C9; /* Añade un borde de 2px de ancho con el color #C9C9C9 */
+    border: 2px solid #C9C9C9; 
 
     width: 89px;
     height: 40px
@@ -153,6 +153,7 @@ padding: 4px;
     flex-direction: column
 }
 .button__cart__quantity{
+    border-style: none;
     display: flex;
     align-items: center;
     justify-content: center;
