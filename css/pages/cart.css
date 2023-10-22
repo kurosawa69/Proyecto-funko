@@ -168,3 +168,16 @@ padding: 4px;
 .cart__price__subtotal{
     font-size: var( --font-medium);
 }
+.cart__summary__ttitle__container{
+    display: flex;
+    justify-content: end;
+    
+}
+.cart__container__summary{
+    display: flex;
+justify-content: flex-end;
+}
+.cart__container__summary ul li{
+    display: flex;
+justify-content: space-between;
+gap: 100px;}
