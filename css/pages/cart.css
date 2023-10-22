@@ -49,7 +49,7 @@ flex-wrap: wrap;*/display: flex;
     grid-template-columns: 1fr 2fr;
     align-items: center;
     padding: var(--spacing-14);
-    width: 35%;
+    width: 48%;
 }
 
 
@@ -62,8 +62,7 @@ flex-wrap: wrap;*/display: flex;
     
 }
 .cart__item__quantity{
-    margin-left: 9%;
-
+width: 17%;
     display:flex;
 
     
@@ -127,10 +126,11 @@ font-weight: 1000 ;
 }
 
 .cart__item{
+    border-style: none;
     display: flex;
     justify-content: space-between;
 }
-.form__input{
+.form___input{
     display: flex;
     align-items: center;
 }
