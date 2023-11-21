@@ -1,4 +1,9 @@
 {
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
   "dependencies": {
     "express": "^4.18.2"
   },
