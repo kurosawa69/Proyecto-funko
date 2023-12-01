@@ -1,0 +1,69 @@
+@import url(../misc/normalize.css);
+@import url(../partials/header.css);
+@import url(../partials/footer.css);
+
+
+
+.layout__section {
+    margin-top: 30px;
+    Width: 515px;
+    Height: 289.13px;
+    justify-content: center;
+    align-items: center;
+}
+.title__login {
+    display: flex;
+    font-size: var(--font-large);
+    justify-content: center;
+    padding-bottom: 30px;
+;
+
+}
+
+.display__form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.boxes__inputs {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 243.03px;
+    height: 44.28px;
+    margin: 0 auto;
+
+}
+
+.gap_2 {
+    gap: 89px;
+}
+
+.check {
+    gap: var(--spacing-26);
+    display: flex;
+    justify-content: center;
+}
+
+.centrar__span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color__pws {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-solid);
+
+}
+
+
+.footer__down {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

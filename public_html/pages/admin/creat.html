@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../../img/icons/edit_pencil.svg" type="svg">
+    <link rel="stylesheet" href="../../css/index.css" />
+    <title>Create</title>
+  </head>
+  <body>
+    <!--comienza el header-->
+    <header>
+      <nav class="navbar container">
+        <picture class="navbar__logo">
+          <a href="./index.html"
+            ><img
+              src="../../img/branding/logo_light_horizontal.svg"
+              alt="Logotipo Funkoshop"
+          /></a>
+        </picture>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="">VER TIENDA</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">ADMIN</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="">SALIR</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--fin del header-->
+    <!--inicia el form-->
+    
+      <main id="register" class="container">
+        <div class="titulo">
+            <h2 class="register__title">CREAR NUEVO ITEM</h2>
+          </div>
+<form action="" class="formulario">
+  <section class="container">
+    <div class="padding">
+      <label for="categoria" class="labels gap">Categoría:
+        <select name="Categoría" id="" class="select__boxes">        
+          <option value="Figuras">Figuras</option>
+          <option value="Remeras">Remeras</option>
+          <option value="Stikers">Stikers</option>
+          </select>
+      </label>
+
+      <label for="licencia" class="labels gap">Licencia:
+        <select name="Licencia" id="" class="select__boxes">        
+         <option value="Naruto">Naruto Shipudden</option>
+         <option value="star Wars">Star Wars</option>
+         <option value="pokemon">pokemon</option>
+       </select>
+     </label>
+       
+   </div>
+   </section>
+
+ <section class="container"><!-- Comienza sección nombre y descripción -->
+      <div class="selectorProducto padding">
+        <label for="name" class="selector__title">Nombre del Producto:</label>
+        <input type="text" class="selector__text" placeholder="Kakashi Hatake Shippuden Saga">
+      </div
+      <div class="padding">
+        <textarea class="content__text content" placeholder= "Descripcion del Producto."></textarea>
+      </div>  
+    </section>
+    <section class="container">
+      <div>
+          <ul class="inputs padding"><!--precio|stock-->
+              <li> <label for="text">SKU:</label><input  type="text" class="select__boxes selector__text" placeholder="SSK111AB001"></li>
+              <li><label for="text">Precio:</label> <input type="number" class="select__boxes selector__text" placeholder=" $ 0.000,00" ></li>
+              <li><label for="text">Stock:</label><input type="number" class=" selector__text" placeholder="0" ></li>
+          </ul>
+      </div>
+      <div class="padding">
+        <ul class="inputs"><!--forma de pago-->
+          <li><label for="text">Descuento:</label> <input type="number" class="selector__text " placeholder="0%" ></li>
+          <li><label for="text">Cuotas:</label>
+            <select name="Cuotas" id="" class="select__boxes">        
+              <option>3 Cuotas sin interes</option>
+              <option>6 cuotas sin interes</option>
+              <option>12 cuotas fijas</option>
+            </select>
+          </li>
+       </ul>
+      </div>
+         </section>
+         <section class="container">
+
+    <div  class="content__text container padding ">
+      <label for="text">Imágenes:
+      </label>
+        <div>
+          <button><a href="">Elegir archivos</a></button>
+          <p class="seleccion_archivo"> No se ha seleccionado ningun Archivo.</p>
+        </div>
+        
+       <br>
+        <br>
+      </section class="container">
+        <div class="formulario__grupo formulario__grupo-btn-agregar__producto">
+          <button type="submit" class="formulario__btn">Agregar Producto</button>
+        
+          
+            <button type="submit" class="formulario__btn">Limpiar</button>
+           </div>
+           </div>
+          </section>
+        </form>  
+    </main>
+    <br>
+    <br>
+    <!--comienza el footer -->
+    <footer class="footer">
+      <nav class="navbar container">
+        <ul class="navbar__item">
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/admin/register.html">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/admin/login.html">INGRESAR</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="../../pages/">CONTACTO </a>
+          </li>
+        </ul>
+        <picture>
+          <img
+            src="../../img/branding/isotype.svg"
+            alt="isotipo de la marca Funkoshop"
+          />
+        </picture>
+      </nav>
+      <p class="footer__copy">All rights reserved 2023 - Funkoshop & copy.</p>
+    </footer>
+  </body>
+</html>
+

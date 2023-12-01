@@ -3,6 +3,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap");
 
+/*GLIDEJS*/
+
+@import url("https://cdn.jsdelivr.net.npm/@glidejs/glide/dist/css/glide.core.min.css");
+@import url("https://cdn.jsdelivr.net.npm/@glidejs/glide/dist/css/glide.theme.min.css");
+
 /*MISCELANEOUS*/
 
 @import url(../css/misc/normalize.css);
@@ -20,6 +25,9 @@
 @import url(./pages/cart.css);
 @import url(./pages/creat.css);
 @import url(./pages/edit.css);
-@import url(./pages/register.css)
+@import url(./pages/register.css);
+@import url(./pages/login.css);
+@import url(./pages/admin.css)
+
 
 

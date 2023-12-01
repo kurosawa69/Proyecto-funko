@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+background color {
+  color: black;
+}
+
+
+.orden {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  
+}
+
+.title__admin {
+    font-size: var(--font-large);
+    justify-content: left;
+    padding-bottom: 30px;
+}
+
+.boxes__admin {
+  display: inline;
+  width: 243.03px;
+  height: 44.28px;
+  margin: 0 auto;
+}
+
+.part {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.gap_adm {
+  gap: var(--spacing-26);
+
+}
+
+tr, th {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  padding: 1rem;
+  text-align: left;
+}
+
+tr, td {
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  padding: 1rem;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text__agregar {
+  font-family: var(--base-font);
+  font-size: var(--font-small);
+  width: 234px;
+  text-align: center;
+}
+
+.fa-solid.fa-pen {
+  color: var(--secondary-solid);
+}
+
+.fa-regular.fa-trash-can {
+  color: var(--primary-solid);
+}
+
+.fa-solid.fa-square-plus{
+  padding: 8px;
+  gap: var(--spacing-26);
+color: var(--primary-solid);
+width: 20px;
+font-size: var(--font-large);
+}
+
+.square-btn{
+  border: none;
+  width: 20px;
+}

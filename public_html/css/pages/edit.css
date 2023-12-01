@@ -138,6 +138,7 @@ font-weight: 500;
     color: var(--light-font-solid);
     width: 175px;
     height: 44.33px;
+    margin-bottom: 20px;
 }
 
 .paraDiv {
