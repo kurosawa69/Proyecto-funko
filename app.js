@@ -1,10 +1,18 @@
 const express = require('express')
 const app = express()
-const PORT = 4004
+const path = require('path')
+
+
+
 const mainRoutes = require('./src/routes/main.routes')
 const shopRoutes = require('./src/routes/shop.routes')
 const adminRoutes = require('./src/routes/admin.routes')
 const authRoutes = require('./src/routes/auth.routes')
+
+const PORT = 4004;
+
+app.set('view engine', 'ejs' );
+app.set('views', path.join(__dirname, './src/views'))
 
 
 app.use(express.static('public_html'))
