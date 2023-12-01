@@ -13,12 +13,11 @@ const PORT = 4004;
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "./src/views"));
 
-app.use(express.static("public_html"));
-
-
 app.use(express.urlencoded());
 app.use(express.json());
 app.use(methodOveride("_method "));
+
+app.use(express.static("public_html"));
 
 app.use("/", mainRoutes, shopRoutes, adminRoutes, authRoutes);
 
