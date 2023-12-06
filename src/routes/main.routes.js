@@ -2,9 +2,11 @@ const express = require('express')
 const router = express.Router()
 const mainController = require('../controllers/main.controller')
 
-router.get('/', (req, res) => res.render('index'))
-router.get('/home', (req, res) => res.render('index'))
-router.get('/contact', (req, res) => res.send('route for contact view'))
-router.get('/about', (req, res) => res.send('route for about view'))
+
+router.get('/', mainController.home)
+router.get('/home', mainController.home )
+router.get('/contact', mainController.contact )
+router.get('/about',mainController.about )
 router.get('/faqs', mainController.faqs)
+
 module.exports = router
