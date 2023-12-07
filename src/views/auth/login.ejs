@@ -1,0 +1,28 @@
+<%- include ('../partials/header.ejs') %>
+
+
+    <section class="layout__section container">
+      <h3 class="title__login">INGRESAR A MI CUENTA</h3>
+      <form action="">
+        <div class="display__form">
+          <label class="labels gap_2" for="email"
+            >Email:<input class="boxes__inputs" type="text"
+          /></label>
+
+          <label class="labels padding" for="password"
+            >Contraseña: <input class="boxes__inputs" type="password"
+          /></label>
+
+          <div class="check padding">
+            <button class="btn-red">INGRESAR</button>
+            <span class="centrar__span gap">
+              <input type="checkbox" /> Recordarme
+            </span>
+          </div>
+          <span class="color__pws">Olvide mi Contraseña</span>
+        </div>
+      </form>
+    </section>
+
+    <!--speracion inico de footer-->
+    <%- include ('../partials/footer.ejs') %>
