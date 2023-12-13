@@ -1,9 +1,11 @@
 const fs = require('fs')
 const path = require('path')
+const { title } = require('process')
 
 module.exports = {
     home: (req, res) => {
-        res.render('index')
+        res.render('index',{
+        title: "FunkoHome"})
     },
     contact: (req, res) => {
         res.send('ruta de contacto')
