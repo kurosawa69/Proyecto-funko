@@ -1,5 +1,5 @@
-const express = require('express')
-const router = express.Router()
+const express = require('express');
+const router = express.Router();
 const authController = require('../controllers/auth.controller')
 
 
@@ -10,4 +10,4 @@ router.post('/auth/register', (req, res) => res.send('route for auth register po
 router.get('/auth/logout', (req, res) => res.send('route for auth logout view'))
 
 
-module.exports = router
+module.exports = router;
