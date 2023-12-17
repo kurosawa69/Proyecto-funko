@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const { title } = require("process");
+const { getAll } = require('../models/product.model');
 
 const data = [
   {
@@ -115,8 +116,10 @@ const data = [
   ]
 
 module.exports = {
-  shop: (req, res) => {
+  shop: async (req, res) => {
 
+    const dbdata = await getAll();
+    console.log(dbdata);
 
     res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
       title: "FunkoShop",
@@ -125,6 +128,7 @@ module.exports = {
   },
   item: (req, res) => {
     const itemId = req.params.id;
+    console.log("el id de mierda es: " + itemId)
     const item = data.find(item => item.product_id == itemId)
 
     res.render(path.resolve(__dirname, "../views/shop/item.ejs"),{

@@ -46,7 +46,7 @@
         <div class="container__card">
            <% data.forEach(item => { %>
             <article class="card-item" >
-                <a class="card-item__link"  href="/shop/item/<%= item.product_id %>">
+                <a class="card-item__link"  href="/shop/item/<%=item.product_id%>">
                   <picture class="card-item__cover">
                     <span class="card-item__tag">Nuevo</span>
                     <img class="card-item__img--front" src="<%= item.img_front %>" alt="pidgeotto-1">
