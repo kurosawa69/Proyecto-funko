@@ -1,5 +1,5 @@
-<%- include ('./partials/header.ejs') %>
-
+<%- include ('../partials/header.ejs') %>
+<section>
     <main>  
         <section class="collection container">
             <picture>
@@ -8,17 +8,17 @@
             <article class="collection__content">
 
               <article class="item__info"></article>
-              <p class="item__licence">STAR WARS</p>
-              <h3 class="item__name">BABY YODA BLUEBALL</h3>
-              <p class="item__description">Figura coleccionable de Baby Yoda (Grogu) - The Mandalorian Saga, edición limitada.</p>
-              <p class="item__price">$ 1799,99</p>
+              <p class="item__licence"><%= item.licence_name %></p>
+              <h3 class="item__name"><%= item.product_name %></h3>
+              <p class="item__description"><%= item.product_description %></p>
+              <p class="item__price"><%= item.product_price %></p>
               <form class="item__cart">
                 <button id="subtract" class="item__quantity" type="button">-</button>
                 <input id="quantity" class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
                 <button id="add" class="item__quantity" type="button">+</button>
                 <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al carrito</button>
               </form>
-              <p class="item__promo"><a href="">Ver métodos de pago</a> - 3 CUOTAS SIN INTERÉS</p>
+              <p class="item__promo"><a href="">Ver métodos de pago</a> - <%= item.dues %></p>
               </article>
 
             </article>
@@ -89,5 +89,4 @@
 
 
 </section>
-
-<%- include ('./partials/footer.ejs') %>
+<%- include ('../partials/footer.ejs') %>
