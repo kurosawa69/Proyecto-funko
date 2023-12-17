@@ -116,7 +116,7 @@ module.exports = {
                       }
       
       ]
-    res.render(path.resolve(__dirname, "../views/shop.ejs"), {
+    res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
       title: "FunkoShop",
       data
     });

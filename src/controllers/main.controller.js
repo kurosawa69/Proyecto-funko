@@ -5,7 +5,7 @@ const { title } = require('process')
 module.exports = {
     home: (req, res) => {
         res.render(path.resolve(__dirname, "../views/main/index.ejs"),{
-        title: "FunkoHome"})
+        title: "Home"})
     },
     contact: (req, res) => {
         res.send('ruta de contacto')
