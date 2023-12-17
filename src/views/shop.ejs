@@ -1,5 +1,4 @@
 <%- include ('./partials/header.ejs') %>
-    <!--FIN DEL HEADER-->
     <!--COMIENZA SECCIÓN VISTA SHOP-->
     <div class="shop">
     <!--comienza aside-->
@@ -45,98 +44,23 @@
     <!--comienza main-->
     <main>
         <div class="container__card">
-           
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/star-wars/trooper-1.webp" alt="figura STORMTROOPER">
-                <div class="card__description">
-                    <p class="card__collection">STAR WARS</p>
-                    <h4 class="card__character">STORMTROOPER LIGHTSABER</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/pokemon/pidgeotto-1.webp" alt="figura PIDGEOTTO">
-                <div class="card__description">
-                    <p class="card__collection">POKEMON</p>
-                    <h4 class="card__character">PIDGEOTTO</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/harry-potter/luna-1.webp" alt="figura LUNA">
-                <div class="card__description">
-                    <p class="card__collection">HARRY POTTER</p>
-                    <h4 class="card__character">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/star-wars/trooper-1.webp" alt="figura STORMTROOPER">
-                <div class="card__description">
-                    <p class="card__collection">STAR WARS</p>
-                    <h4 class="card__character">STORMTROOPER LIGHTSABER</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/pokemon/pidgeotto-1.webp" alt="figura PIDGEOTTO">
-                <div class="card__description">
-                    <p class="card__collection">POKEMON</p>
-                    <h4 class="card__character">PIDGEOTTO</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/harry-potter/luna-1.webp" alt="figura LUNA">
-                <div class="card__description">
-                    <p class="card__collection">HARRY POTTER</p>
-                    <h4 class="card__character">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>  
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/star-wars/trooper-1.webp" alt="figura STORMTROOPER">
-                <div class="card__description">
-                    <p class="card__collection">STAR WARS</p>
-                    <h4 class="card__character">STORMTROOPER LIGHTSABER</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/pokemon/pidgeotto-1.webp" alt="figura PIDGEOTTO">
-                <div class="card__description">
-                    <p class="card__collection">POKEMON</p>
-                    <h4 class="card__character">PIDGEOTTO</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>
-            <div class="card">
-                <h3 class="card__new">NUEVO</h3>
-                <img class="card__image" src="../img/harry-potter/luna-1.webp" alt="figura LUNA">
-                <div class="card__description">
-                    <p class="card__collection">HARRY POTTER</p>
-                    <h4 class="card__character">LUNA LOVEGOOD LION MASK</h4>
-                    <p class="card__price">$ 1799.99</p>
-                    <p class="card__info">3 CUOTAS SIN INTERÉS</p>
-                </div>
-            </div>   
-                 
+           <% data.forEach(item => { %>
+            <article class="card-item" >
+                <a class="card-item__link"  href="/item/<%= item.product_id %>">
+                  <picture class="card-item__cover">
+                    <span class="card-item__tag">Nuevo</span>
+                    <img class="card-item__img--front" src="<%= item.img_front %>" alt="pidgeotto-1">
+                    <img class="card-item__img--back" src="<%= item.img_back %>" alt="Pidgeotto en caja">
+                  </picture>
+                  <div class="card-item__content">
+                    <p class="card-item__licence"><%= item.licence_name %></p>
+                    <h4 class="card-item__name"><%= item.product_name %></h4>
+                    <p class="card-item__price">$ <%= item.product_price %></p>
+                    <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
+                  </div>
+                </a>
+                </article>
+                 <% }) %>
         </div>
     </main>
     <!--fin main-->
