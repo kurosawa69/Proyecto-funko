@@ -1,5 +1,5 @@
 #register {
-    margin: var(--spacing-68) auto;
+   /* margin: var(--spacing-68) auto;   est'a afectando al h1 de admin/create con margen superior*/ 
     display: flex;
     flex-direction: column;
     justify-content: center;
