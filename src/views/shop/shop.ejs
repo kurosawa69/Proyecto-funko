@@ -49,13 +49,14 @@
                 <a class="card-item__link"  href="/shop/item/<%=item.product_id%>">
                   <picture class="card-item__cover">
                     <span class="card-item__tag">Nuevo</span>
-                    <img class="card-item__img--front" src="<%= item.img_front %>" alt="pidgeotto-1">
-                    <img class="card-item__img--back" src="<%= item.img_back %>" alt="Pidgeotto en caja">
+                    <img class="card-item__img--front" src="img/<%= item.image_front %>" alt="Figura coleccionable">
+                    
+                    <img class="card-item__img--back" src="img/<%= item.image_back %>" alt="Figura coleccionable">
                   </picture>
                   <div class="card-item__content">
                     <p class="card-item__licence"><%= item.licence_name %></p>
                     <h4 class="card-item__name"><%= item.product_name %></h4>
-                    <p class="card-item__price">$ <%= item.product_price %></p>
+                    <p class="card-item__price">$ <%= item.price %></p>
                     <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                   </div>
                 </a>

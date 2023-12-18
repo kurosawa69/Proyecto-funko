@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const { title } = require("process");
-const { getAll } = require('../models/product.model');
+const { getAll, getOne } = require('../models/product.model');
 
-const data = [
+const json = [
   {
   product_id: 1,
   licence_name: "Pokemon",
@@ -118,18 +118,17 @@ const data = [
 module.exports = {
   shop: async (req, res) => {
 
-    const dbdata = await getAll();
-    console.log(dbdata);
-
+    const data = await getAll();
+    
     res.render(path.resolve(__dirname, "../views/shop/shop.ejs"), {
       title: "FunkoShop",
       data
     });
   },
-  item: (req, res) => {
+  item: async(req, res) => {
     const itemId = req.params.id;
-    console.log("el id de mierda es: " + itemId)
-    const item = data.find(item => item.product_id == itemId)
+    
+    const [ item ] = await getOne(itemId);
 
     res.render(path.resolve(__dirname, "../views/shop/item.ejs"),{
     title: "ItemView",
