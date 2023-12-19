@@ -37,6 +37,7 @@ header {
 .navbar__link iconify-icon{
     color: white;
 }
+
 /*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;
