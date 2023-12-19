@@ -6,7 +6,8 @@ const { admin,
         agregar, 
         edit, 
         itemModificación, 
-        deleteItem 
+        deleteItem ,
+        
     } = require ('../controllers/admin.controller');
 
 
@@ -16,5 +17,7 @@ router.post('/admin/create', agregar);
 router.get('/admin/edit/:id', edit);
 router.put('/admin/edit/:id', itemModificación);
 router.delete('/admin/delete/:id', deleteItem);
+
+
 
 module.exports = router;

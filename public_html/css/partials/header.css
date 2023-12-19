@@ -33,6 +33,11 @@ header {
 .navbar__link:hover {
     background-color: var(--primary-900); 
 }
+
+.navbar__link iconify-icon{
+    color: white;
+}
+
 /*Agrego cambios menu desplegable */
 .with-icon{
     display: flex;
