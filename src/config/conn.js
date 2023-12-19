@@ -1,10 +1,11 @@
 const mysql = require('mysql2');
+require('dotenv').config();
 
 const pool = mysql.createPool({
-    user: 'root',
-    password: '',
-    host: 'localhost',
-    port: '3306',
+    user: process.env.DBUSER,
+    password: process.env.DBPASS,
+    host: process.env.DBHOST,
+    port: process.env.DBPORT,
     database: 'funko_db',
     connectionLimit: 10,
     waitForConnections: true,
